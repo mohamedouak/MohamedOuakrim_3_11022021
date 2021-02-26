@@ -9,7 +9,8 @@
 @import "pages/page3.scss";
 @import "pages/page4.scss";
 body{
-    margin: 0;
+    max-width: 2540px;
+    margin: 0 auto;
 }
 .description{
     @include description;
@@ -45,6 +46,9 @@ body{
 .fonctionnement{
     h2{
         padding-left: 20px;
+        @media screen and (min-width: 1024px){
+            padding-left: 40px;
+        }
     }
     font-family: 'Roboto', sans-serif;
     &__list{
@@ -55,9 +59,15 @@ body{
             font-size: 0.8em;
             justify-content: space-around;    
         }
+        @media screen and (min-width: 1024px) {
+            justify-content: space-around;
+        }
     }
     .list{
         @include fonctionnement-block;
+        @media screen and (min-width: 1024px){
+            width: 25%;
+        }
         &:hover{
             background-color: #F2F2F2;
         .icon_text i{
@@ -92,12 +102,19 @@ body{
     }
     h2{
         padding: 40px 0 0 20px;
+        @media screen and (min-width: 1024px){
+            padding-left: 50px;
+        }
     }
     .block{
         @media screen and (min-width:768px) and (max-width:1023px){
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+        }
+        @media screen and (min-width: 1024px){
+            display: flex;
+            justify-content: space-around;   
         }
     }
     .restaurant{
@@ -106,6 +123,9 @@ body{
         padding-bottom: 15px;
         @media screen and (min-width:768px) and (max-width:1023px){
             width: 50%;
+        }
+        @media screen and (min-width: 1024px){
+            width: 22%;
         }
         &__block{
             width: 90%;
@@ -116,9 +136,6 @@ body{
             border-radius: 20px 20px 20px 20px;
             background-color: white;
             box-shadow: 4px 4px 4px 4px #f2f2f2;
-            figcaption{
-                width: 90%;
-            }
             .new{
                 background-color: $color-tertiary;
                 color: #578176;
@@ -129,8 +146,13 @@ body{
                 right: 10px;
             }
             figcaption{
+                width: 90%;
                 display: flex;
                 justify-content: space-between;
+                @media screen and (min-width: 1024px){
+                    width: 100%;
+                    font-size: 0.9em;
+                }
                 .text{
                     padding-left: 15px;
                     h3{
@@ -165,6 +187,9 @@ body{
         border-radius: 20px 20px 0 0;
         @media screen and (min-width:768px) and (max-width:1023px){
             height: 25vw;
+        }
+        @media screen and (min-width: 1024px){
+            height: 15vw;
         }
     }
 }
