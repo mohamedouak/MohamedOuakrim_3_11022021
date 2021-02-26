@@ -4,21 +4,12 @@
 @import "variables.scss";
 @import "header.scss";
 @import "footer.scss";
-
+@import "pages/page1.scss";
+@import "pages/page2.scss";
+@import "pages/page3.scss";
+@import "pages/page4.scss";
 body{
     margin: 0;
-}
-header{
-    i{
-        position: absolute;
-        left: 20px;
-        top: 35px;
-        font-size: 1.3em;
-    }
-    h1{
-        text-align: center;
-        font-family: 'Shrikhand', cursive;
-    }
 }
 .description{
     @include description;
@@ -44,6 +35,10 @@ header{
         }
         &__btn{
             @include btn-explorer;
+            &:hover{
+                opacity: 0.9;
+                box-shadow: 2px 2px 2px 2px $color-primary;
+            }
         }
     }
 }
@@ -56,9 +51,19 @@ header{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        @media screen and (min-width:768px) and (max-width:1023px){
+            font-size: 0.8em;
+            justify-content: space-around;    
+        }
     }
     .list{
         @include fonctionnement-block;
+        &:hover{
+            background-color: #F2F2F2;
+        .icon_text i{
+                color: $color-primary;
+            }
+        } 
         .number{
             @include fonctionnement-number;
         }
@@ -68,6 +73,9 @@ header{
             justify-content: space-around;
             align-items: center;
             font-size: 1.1em;
+            @media screen and (min-width:768px) and (max-width:1023px){
+                justify-content: space-between;
+            }
             i{
                 color: #B1B1B1;
             }
@@ -78,19 +86,42 @@ header{
     font-family: 'Roboto', sans-serif;
     background-color: #F6F6F6;
     padding-bottom: 50px;
+    @media screen and (min-width:768px) and (max-width:1023px){
+        display: flex;
+        flex-direction: column;
+    }
     h2{
         padding: 40px 0 0 20px;
+    }
+    .block{
+        @media screen and (min-width:768px) and (max-width:1023px){
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
     }
     .restaurant{
         display: flex;
         justify-content: center;
         padding-bottom: 15px;
+        @media screen and (min-width:768px) and (max-width:1023px){
+            width: 50%;
+        }
         &__block{
+            width: 90%;
             margin: 0;
-            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px 20px 20px 20px;
+            background-color: white;
+            box-shadow: 4px 4px 4px 4px #f2f2f2;
+            figcaption{
+                width: 90%;
+            }
             .new{
-                background-color: #99e2d0;
-                color: #1b6150;
+                background-color: $color-tertiary;
+                color: #578176;
                 padding: 5px 10px 5px 10px;
                 border-radius: 2px;
                 position: absolute;
@@ -123,14 +154,8 @@ header{
             }            
         }
         a{
-            width: 90%;
-            background-color: white;
-            text-decoration-line: none;
-            color: black;
-            display: flex;
-            justify-content: center;
-            border-radius: 20px;
-            box-shadow: 4px 4px 4px 4px #F3F3F3;
+            position: relative;
+            width: 100%;
         }
     }
     img{
@@ -138,6 +163,10 @@ header{
         height: 45vw;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
+        @media screen and (min-width:768px) and (max-width:1023px){
+            height: 25vw;
+        }
     }
 }
+
 
