@@ -34,8 +34,8 @@ body{
         h2{
             padding: 0 70px 0 70px;
         }
-        &__btn{
-            @include btn-explorer;
+        .btn{
+            @include button;
             &:hover{
                 opacity: 0.9;
                 box-shadow: 2px 2px 2px 2px $color-primary;
