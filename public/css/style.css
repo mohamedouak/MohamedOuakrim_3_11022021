@@ -116,6 +116,19 @@ body {
     border-radius: 0;
   }
 }
+.card .menu--modified {
+  margin-top: -285px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu--modified {
+    margin-top: -500px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .menu--modified {
+    margin-top: -650px;
+  }
+}
 .card .menu .heart_title {
   display: flex;
   justify-content: space-around;
@@ -288,6 +301,19 @@ body {
     border-radius: 0;
   }
 }
+.card .menu--modified {
+  margin-top: -285px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu--modified {
+    margin-top: -500px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .menu--modified {
+    margin-top: -650px;
+  }
+}
 .card .menu .heart_title {
   display: flex;
   justify-content: space-around;
@@ -460,6 +486,19 @@ body {
     border-radius: 0;
   }
 }
+.card .menu--modified {
+  margin-top: -285px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu--modified {
+    margin-top: -500px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .menu--modified {
+    margin-top: -650px;
+  }
+}
 .card .menu .heart_title {
   display: flex;
   justify-content: space-around;
@@ -630,6 +669,19 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card .menu {
     border-radius: 0;
+  }
+}
+.card .menu--modified {
+  margin-top: -285px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu--modified {
+    margin-top: -500px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .menu--modified {
+    margin-top: -650px;
   }
 }
 .card .menu .heart_title {
