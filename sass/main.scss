@@ -37,7 +37,7 @@ body{
         .btn{
             @include button;
             &:hover{
-                opacity: 0.9;
+                opacity: 0.85;
                 box-shadow: 2px 2px 2px 2px $color-primary;
             }
         }
@@ -168,6 +168,7 @@ body{
                     padding-right: 15px;
                     i{
                         font-size: 1.5em;
+                        cursor: pointer;
                         &:hover{
                             background: linear-gradient(to top left, $color-primary, $color-secondary);
                         }
