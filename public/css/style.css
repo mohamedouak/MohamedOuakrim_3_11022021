@@ -24,8 +24,8 @@ header i {
   header i {
     position: absolute;
     left: 25px;
-    top: 30px;
-    font-size: 2.5em;
+    top: 12px;
+    font-size: 2em;
   }
 }
 header h1 {
@@ -34,12 +34,12 @@ header h1 {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header h1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 }
 @media screen and (min-width: 1024px) {
   header h1 {
-    font-size: 4em;
+    font-size: 2.5em;
   }
 }
 
@@ -96,13 +96,26 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1024px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .card .image img {
   width: 100%;
   object-fit: cover;
+  height: 300px;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card .image img {
     border-radius: 55px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .image img {
+    height: 400px;
   }
 }
 .card .menu {
@@ -116,17 +129,9 @@ body {
     border-radius: 0;
   }
 }
-.card .menu--modified {
-  margin-top: -285px;
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .card .menu--modified {
-    margin-top: -500px;
-  }
-}
 @media screen and (min-width: 1024px) {
-  .card .menu--modified {
-    margin-top: -650px;
+  .card .menu {
+    width: 90%;
   }
 }
 .card .menu .heart_title {
@@ -134,24 +139,25 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .card .menu .heart_title {
     justify-content: space-between;
   }
 }
 .card .menu .heart_title h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 1.8em;
+  font-size: 2em;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card .menu .heart_title h1 {
     padding-left: 15px;
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 @media screen and (min-width: 1024px) {
   .card .menu .heart_title h1 {
-    font-size: 2.5em;
+    font-size: 2em;
+    margin-left: 30px;
   }
 }
 .card .menu .heart_title i {
@@ -160,13 +166,14 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card .menu .heart_title i {
-    font-size: 2.5em;
+    font-size: 2em;
     padding-right: 15px;
   }
 }
 @media screen and (min-width: 1024px) {
   .card .menu .heart_title i {
-    font-size: 2.5em;
+    font-size: 2em;
+    margin-right: 30px;
   }
 }
 .card .menu .heart_title i:hover {
@@ -281,13 +288,26 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1024px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .card .image img {
   width: 100%;
   object-fit: cover;
+  height: 300px;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card .image img {
     border-radius: 55px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .image img {
+    height: 400px;
   }
 }
 .card .menu {
@@ -301,17 +321,9 @@ body {
     border-radius: 0;
   }
 }
-.card .menu--modified {
-  margin-top: -285px;
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .card .menu--modified {
-    margin-top: -500px;
-  }
-}
 @media screen and (min-width: 1024px) {
-  .card .menu--modified {
-    margin-top: -650px;
+  .card .menu {
+    width: 90%;
   }
 }
 .card .menu .heart_title {
@@ -319,24 +331,25 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .card .menu .heart_title {
     justify-content: space-between;
   }
 }
 .card .menu .heart_title h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 1.8em;
+  font-size: 2em;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card .menu .heart_title h1 {
     padding-left: 15px;
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 @media screen and (min-width: 1024px) {
   .card .menu .heart_title h1 {
-    font-size: 2.5em;
+    font-size: 2em;
+    margin-left: 30px;
   }
 }
 .card .menu .heart_title i {
@@ -345,13 +358,14 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card .menu .heart_title i {
-    font-size: 2.5em;
+    font-size: 2em;
     padding-right: 15px;
   }
 }
 @media screen and (min-width: 1024px) {
   .card .menu .heart_title i {
-    font-size: 2.5em;
+    font-size: 2em;
+    margin-right: 30px;
   }
 }
 .card .menu .heart_title i:hover {
@@ -466,13 +480,26 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1024px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .card .image img {
   width: 100%;
   object-fit: cover;
+  height: 300px;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card .image img {
     border-radius: 55px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .image img {
+    height: 400px;
   }
 }
 .card .menu {
@@ -486,17 +513,9 @@ body {
     border-radius: 0;
   }
 }
-.card .menu--modified {
-  margin-top: -285px;
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .card .menu--modified {
-    margin-top: -500px;
-  }
-}
 @media screen and (min-width: 1024px) {
-  .card .menu--modified {
-    margin-top: -650px;
+  .card .menu {
+    width: 90%;
   }
 }
 .card .menu .heart_title {
@@ -504,24 +523,25 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .card .menu .heart_title {
     justify-content: space-between;
   }
 }
 .card .menu .heart_title h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 1.8em;
+  font-size: 2em;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card .menu .heart_title h1 {
     padding-left: 15px;
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 @media screen and (min-width: 1024px) {
   .card .menu .heart_title h1 {
-    font-size: 2.5em;
+    font-size: 2em;
+    margin-left: 30px;
   }
 }
 .card .menu .heart_title i {
@@ -530,13 +550,14 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card .menu .heart_title i {
-    font-size: 2.5em;
+    font-size: 2em;
     padding-right: 15px;
   }
 }
 @media screen and (min-width: 1024px) {
   .card .menu .heart_title i {
-    font-size: 2.5em;
+    font-size: 2em;
+    margin-right: 30px;
   }
 }
 .card .menu .heart_title i:hover {
@@ -651,13 +672,26 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1024px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .card .image img {
   width: 100%;
   object-fit: cover;
+  height: 300px;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card .image img {
     border-radius: 55px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .image img {
+    height: 400px;
   }
 }
 .card .menu {
@@ -671,17 +705,9 @@ body {
     border-radius: 0;
   }
 }
-.card .menu--modified {
-  margin-top: -285px;
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .card .menu--modified {
-    margin-top: -500px;
-  }
-}
 @media screen and (min-width: 1024px) {
-  .card .menu--modified {
-    margin-top: -650px;
+  .card .menu {
+    width: 90%;
   }
 }
 .card .menu .heart_title {
@@ -689,24 +715,25 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   .card .menu .heart_title {
     justify-content: space-between;
   }
 }
 .card .menu .heart_title h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 1.8em;
+  font-size: 2em;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card .menu .heart_title h1 {
     padding-left: 15px;
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 @media screen and (min-width: 1024px) {
   .card .menu .heart_title h1 {
-    font-size: 2.5em;
+    font-size: 2em;
+    margin-left: 30px;
   }
 }
 .card .menu .heart_title i {
@@ -715,13 +742,14 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card .menu .heart_title i {
-    font-size: 2.5em;
+    font-size: 2em;
     padding-right: 15px;
   }
 }
 @media screen and (min-width: 1024px) {
   .card .menu .heart_title i {
-    font-size: 2.5em;
+    font-size: 2em;
+    margin-right: 30px;
   }
 }
 .card .menu .heart_title i:hover {
