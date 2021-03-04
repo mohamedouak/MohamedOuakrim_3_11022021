@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap");
+header {
+  padding: 10px 0 10px 0;
+}
 @media screen and (min-width: 768px) {
   header {
     position: relative;
@@ -8,29 +11,24 @@
 header i {
   position: absolute;
   left: 20px;
-  top: 35px;
+  top: 25px;
   font-size: 1.3em;
   color: black;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header i {
-    position: absolute;
-    left: 25px;
-    top: 20px;
     font-size: 2em;
   }
 }
 @media screen and (min-width: 1024px) {
   header i {
-    position: absolute;
-    left: 25px;
-    top: 12px;
     font-size: 2em;
   }
 }
 header h1 {
   text-align: center;
   font-family: "Shrikhand", cursive;
+  margin: 0;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header h1 {
@@ -103,6 +101,9 @@ body {
     justify-content: center;
   }
 }
+.card .image {
+  width: 100%;
+}
 .card .image img {
   width: 100%;
   object-fit: cover;
@@ -146,7 +147,7 @@ body {
 }
 .card .menu .heart_title h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card .menu .heart_title h1 {
@@ -276,6 +277,7 @@ body {
   border: none;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   cursor: pointer;
+  font-weight: 500;
   padding: 15px 40px 15px 40px;
 }
 .card .button .btn:hover {
@@ -295,6 +297,9 @@ body {
     justify-content: center;
   }
 }
+.card .image {
+  width: 100%;
+}
 .card .image img {
   width: 100%;
   object-fit: cover;
@@ -338,7 +343,7 @@ body {
 }
 .card .menu .heart_title h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card .menu .heart_title h1 {
@@ -468,6 +473,7 @@ body {
   border: none;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   cursor: pointer;
+  font-weight: 500;
   padding: 15px 40px 15px 40px;
 }
 .card .button .btn:hover {
@@ -487,6 +493,9 @@ body {
     justify-content: center;
   }
 }
+.card .image {
+  width: 100%;
+}
 .card .image img {
   width: 100%;
   object-fit: cover;
@@ -530,7 +539,7 @@ body {
 }
 .card .menu .heart_title h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card .menu .heart_title h1 {
@@ -660,6 +669,7 @@ body {
   border: none;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   cursor: pointer;
+  font-weight: 500;
   padding: 15px 40px 15px 40px;
 }
 .card .button .btn:hover {
@@ -679,6 +689,9 @@ body {
     justify-content: center;
   }
 }
+.card .image {
+  width: 100%;
+}
 .card .image img {
   width: 100%;
   object-fit: cover;
@@ -722,7 +735,7 @@ body {
 }
 .card .menu .heart_title h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card .menu .heart_title h1 {
@@ -852,6 +865,7 @@ body {
   border: none;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   cursor: pointer;
+  font-weight: 500;
   padding: 15px 40px 15px 40px;
 }
 .card .button .btn:hover {
@@ -885,7 +899,7 @@ body {
   font-weight: 500;
 }
 .description .presentation {
-  padding-bottom: 40px;
+  padding: 40px 0 60px 0;
 }
 .description .presentation p {
   font-size: 1.1em;
@@ -904,6 +918,7 @@ body {
   border: none;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   cursor: pointer;
+  font-weight: 500;
 }
 .description .presentation .btn:hover {
   opacity: 0.85;
@@ -911,10 +926,12 @@ body {
 }
 
 .fonctionnement {
+  padding: 30px 0 30px 0;
   font-family: "Roboto", sans-serif;
 }
 .fonctionnement h2 {
-  padding-left: 20px;
+  margin-bottom: 0;
+  padding: 0 0 25px 20px;
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement h2 {
@@ -943,7 +960,7 @@ body {
   background-color: #F5F5F5;
   margin-bottom: 20px;
   border-radius: 20px;
-  padding: 15px;
+  padding: 10px;
   box-shadow: 3px 3px 3px 3px #E6E6E6;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -957,14 +974,14 @@ body {
   }
 }
 .fonctionnement .list:hover {
-  background-color: #F2F2F2;
+  background-color: #F5EDFF;
 }
 .fonctionnement .list:hover .icon_text i {
   color: #9356DC;
 }
 .fonctionnement .list .number {
-  font-size: 1em;
-  padding: 2px 7px 2px 7px;
+  font-size: 0.9em;
+  padding: 3px 8px 3px 8px;
   border-radius: 100%;
   color: white;
   background-color: #9356DC;
@@ -976,7 +993,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 1.1em;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .fonctionnement .list .icon_text {
@@ -985,6 +1001,10 @@ body {
 }
 .fonctionnement .list .icon_text i {
   color: #B1B1B1;
+  font-size: 1.2em;
+}
+.fonctionnement .list .icon_text p {
+  font-weight: bold;
 }
 
 .restaurants {
@@ -1064,8 +1084,10 @@ body {
     font-size: 0.9em;
   }
 }
-.restaurants .restaurant__block figcaption .text {
-  padding-left: 15px;
+@media screen and (min-width: 1024px) {
+  .restaurants .restaurant__block figcaption .text {
+    padding-left: 10px;
+  }
 }
 .restaurants .restaurant__block figcaption .text h3 {
   margin-bottom: 5px;
@@ -1076,7 +1098,11 @@ body {
 .restaurants .restaurant__block figcaption .heart {
   display: flex;
   align-items: center;
-  padding-right: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants .restaurant__block figcaption .heart {
+    padding-right: 10px;
+  }
 }
 .restaurants .restaurant__block figcaption .heart i {
   font-size: 1.5em;

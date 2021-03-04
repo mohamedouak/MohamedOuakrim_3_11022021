@@ -20,6 +20,7 @@
         border: none;
         background: linear-gradient(to top left, $color-primary, $color-secondary);
         cursor: pointer;
+        font-weight: 500;
 }
 @mixin fonctionnement-block {
         width: 80%;
@@ -27,15 +28,15 @@
         background-color: #F5F5F5;
         margin-bottom: 20px;
         border-radius: 20px;
-        padding: 15px;
+        padding: 10px;
         box-shadow: 3px 3px 3px 3px #E6E6E6;
         @media screen and (min-width:768px) and (max-width:1023px){
                 width: 25%;
         }
 }
 @mixin fonctionnement-number {
-        font-size: 1em;
-        padding: 2px 7px 2px 7px;
+        font-size: 0.9em;
+        padding: 3px 8px 3px 8px;
         border-radius: 100%;
         color: white;
         background-color: $color-primary;
