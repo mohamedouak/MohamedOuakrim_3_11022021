@@ -223,6 +223,7 @@ body {
 .card .menu .title .all__block__choice {
   width: 100%;
   padding: 10px 0 10px 0;
+  cursor: pointer;
   background-color: white;
   border-radius: 15px;
   box-shadow: 3px 3px 3px 3px #e6e6e6;
@@ -412,6 +413,7 @@ body {
 .card .menu .title .all__block__choice {
   width: 100%;
   padding: 10px 0 10px 0;
+  cursor: pointer;
   background-color: white;
   border-radius: 15px;
   box-shadow: 3px 3px 3px 3px #e6e6e6;
@@ -601,6 +603,7 @@ body {
 .card .menu .title .all__block__choice {
   width: 100%;
   padding: 10px 0 10px 0;
+  cursor: pointer;
   background-color: white;
   border-radius: 15px;
   box-shadow: 3px 3px 3px 3px #e6e6e6;
@@ -790,6 +793,7 @@ body {
 .card .menu .title .all__block__choice {
   width: 100%;
   padding: 10px 0 10px 0;
+  cursor: pointer;
   background-color: white;
   border-radius: 15px;
   box-shadow: 3px 3px 3px 3px #e6e6e6;
@@ -871,7 +875,7 @@ body .loader__spiner {
   bottom: 0;
   right: 0;
   left: 0;
-  animation: spin 2s both;
+  animation: spin 3s both;
 }
 @keyframes spin {
   0% {
@@ -885,13 +889,14 @@ body .loader__spiner {
 }
 @keyframes opacity {
   0% {
-    transform: inherit;
-    opacity: 0.8;
+    opacity: 0.9;
     background-color: white;
     z-index: 3;
   }
+  50% {
+    opacity: 0.4;
+  }
   100% {
-    transform: inherit;
     opacity: 0;
   }
 }
