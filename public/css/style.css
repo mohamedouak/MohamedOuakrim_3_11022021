@@ -152,6 +152,7 @@ body {
   }
 }
 .card .menu .heart_title i {
+  color: white;
   font-size: 1.5em;
   cursor: pointer;
   position: absolute;
@@ -170,6 +171,8 @@ body {
 }
 .card .menu .heart_title i:hover {
   background: linear-gradient(to top left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media screen and (min-width: 1024px) {
   .card .menu .container {
@@ -342,6 +345,7 @@ body {
   }
 }
 .card .menu .heart_title i {
+  color: white;
   font-size: 1.5em;
   cursor: pointer;
   position: absolute;
@@ -360,6 +364,8 @@ body {
 }
 .card .menu .heart_title i:hover {
   background: linear-gradient(to top left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media screen and (min-width: 1024px) {
   .card .menu .container {
@@ -532,6 +538,7 @@ body {
   }
 }
 .card .menu .heart_title i {
+  color: white;
   font-size: 1.5em;
   cursor: pointer;
   position: absolute;
@@ -550,6 +557,8 @@ body {
 }
 .card .menu .heart_title i:hover {
   background: linear-gradient(to top left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media screen and (min-width: 1024px) {
   .card .menu .container {
@@ -722,6 +731,7 @@ body {
   }
 }
 .card .menu .heart_title i {
+  color: white;
   font-size: 1.5em;
   cursor: pointer;
   position: absolute;
@@ -740,6 +750,8 @@ body {
 }
 .card .menu .heart_title i:hover {
   background: linear-gradient(to top left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media screen and (min-width: 1024px) {
   .card .menu .container {
@@ -893,9 +905,6 @@ body .loader__spiner {
     background-color: white;
     z-index: 3;
   }
-  50% {
-    opacity: 0.4;
-  }
   100% {
     opacity: 0;
   }
@@ -995,8 +1004,8 @@ body .loader__spiner {
 }
 .fonctionnement .list .number {
   font-size: 0.9em;
-  padding: 3px 8px 3px 8px;
-  border-radius: 100%;
+  padding: 3px 7px 3px 7px;
+  border-radius: 50%;
   color: white;
   background-color: #9356DC;
   position: absolute;
@@ -1011,7 +1020,7 @@ body .loader__spiner {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .fonctionnement .list .icon_text {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 .fonctionnement .list .icon_text i {
@@ -1114,6 +1123,7 @@ body .loader__spiner {
 .restaurants .restaurant__block figcaption .heart {
   display: flex;
   align-items: center;
+  position: relative;
 }
 @media screen and (min-width: 1024px) {
   .restaurants .restaurant__block figcaption .heart {
@@ -1124,8 +1134,17 @@ body .loader__spiner {
   font-size: 1.5em;
   cursor: pointer;
 }
-.restaurants .restaurant__block figcaption .heart i:hover {
+.restaurants .restaurant__block figcaption .heart .coeur, .restaurants .restaurant__block figcaption .heart .coeur2 {
+  position: absolute;
+  right: 10px;
+}
+.restaurants .restaurant__block figcaption .heart .coeur:hover, .restaurants .restaurant__block figcaption .heart .coeur2:hover {
   background: linear-gradient(to top left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurants .restaurant__block figcaption .heart .coeur2 {
+  color: white;
 }
 .restaurants .restaurant a {
   position: relative;
