@@ -1,0 +1,37 @@
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 0;
+    }       
+}
+@keyframes opacity_spin{
+    0%{
+        opacity: 0.9;
+        background-color: white;
+        z-index: 3;    
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes opacity_menu{   
+    from{
+        transform:scaleX(0) ;
+    }
+    to{
+        transform: scaleX(1);
+    }
+
+}
+@keyframes margin_bottom{
+    from{
+        margin-bottom: 5px;
+    }
+    to{
+        margin-bottom: 0px;
+    }
+}

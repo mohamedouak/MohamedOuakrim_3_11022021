@@ -4,6 +4,7 @@
 @import "variables.scss";
 @import "header.scss";
 @import "footer.scss";
+@import "animations.scss";
 @import "pages/page1.scss";
 @import "pages/page2.scss";
 @import "pages/page3.scss";
@@ -16,7 +17,7 @@ body{
         width: 100%;
         height: 100%;
         position: fixed;    
-        animation: opacity 3s linear;
+        animation: opacity_spin 3s linear;
         z-index: -1;
         &__spiner{
             width: 150px;
@@ -34,27 +35,7 @@ body{
             left: 0;
             animation: spin 3s both;       
         }
-    }
-    @keyframes spin {
-        0%{
-            transform: rotate(0deg);
-            opacity: 1;
-        }
-        100%{
-            transform: rotate(360deg);
-            opacity: 0;
-        }       
-    }
-    @keyframes opacity{
-        0%{
-            opacity: 0.9;
-            background-color: white;
-            z-index: 3;
-        }
-        100%{
-            opacity: 0;
-        }
-    }
+    }    
 }
 .description{
     @include description;
@@ -81,9 +62,8 @@ body{
         .btn{
             @include button;
             &:hover{
-
                 opacity: 0.85;
-                box-shadow: 2px 2px 2px 2px $color-primary;
+                box-shadow: 2px 2px 2px 2px darkgrey;
             }
         }
     }
@@ -183,6 +163,7 @@ body{
             .new{
                 background-color: $color-tertiary;
                 color: #578176;
+                font-weight: bold;
                 padding: 5px 10px 5px 10px;
                 border-radius: 2px;
                 position: absolute;
@@ -214,22 +195,15 @@ body{
                     }
                     display: flex;
                     align-items: center;
-                    position: relative;
                     i{
                         font-size: 1.5em;
                         cursor: pointer;
-                    }                   
-                    .coeur, .coeur2{
-                        position: absolute;
-                        right: 10px;
                         &:hover{
                             background: linear-gradient(to top left, $color-primary, $color-secondary);
                             -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;                         
+                            -webkit-text-fill-color: transparent;
+                            font-weight: bold;
                         }
-                    }
-                    .coeur2{
-                        color: white;
                     }
                 }
             }            
