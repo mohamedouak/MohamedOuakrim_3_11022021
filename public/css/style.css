@@ -297,7 +297,7 @@ body {
   background-color: white;
   color: #99E2D0;
   padding: 5px;
-  animation: check 0.5s;
+  animation: check 0.3s both;
 }
 .card .menu .title .all__block:nth-child(1) {
   animation: opacity_menu 0.5s backwards, margin_bottom 0.5s backwards;
@@ -528,7 +528,7 @@ body {
   background-color: white;
   color: #99E2D0;
   padding: 5px;
-  animation: check 0.5s;
+  animation: check 0.3s both;
 }
 .card .menu .title .all__block:nth-child(1) {
   animation: opacity_menu 0.5s backwards, margin_bottom 0.5s backwards;
@@ -759,7 +759,7 @@ body {
   background-color: white;
   color: #99E2D0;
   padding: 5px;
-  animation: check 0.5s;
+  animation: check 0.3s both;
 }
 .card .menu .title .all__block:nth-child(1) {
   animation: opacity_menu 0.5s backwards, margin_bottom 0.5s backwards;
@@ -990,7 +990,7 @@ body {
   background-color: white;
   color: #99E2D0;
   padding: 5px;
-  animation: check 0.5s;
+  animation: check 0.3s both;
 }
 .card .menu .title .all__block:nth-child(1) {
   animation: opacity_menu 0.5s backwards, margin_bottom 0.5s backwards;
