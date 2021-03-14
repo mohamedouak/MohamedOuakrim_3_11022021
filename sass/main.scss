@@ -198,12 +198,13 @@ body{
                     i{
                         font-size: 1.5em;
                         cursor: pointer;
-                        display: block;                     
+                        display: inline-block;               
                         &:hover{
                             background: linear-gradient(to top left, $color-primary, $color-secondary);
                             -webkit-background-clip: text;
                             -webkit-text-fill-color: transparent;
-                            font-weight: bold;                                                 
+                            font-weight: bold;
+                            animation: opacity_heart 0.5s both;                                         
                         }
                     }
                 }
