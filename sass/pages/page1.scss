@@ -113,10 +113,9 @@ body{
                     &:hover{
                         .all__block__check{
                             max-height: 75px;
-                            width: 65px;
                             background-color: $color-tertiary;
                             border-radius: 0 15px 15px 0;
-                            transition-duration: .6s;
+                            animation: width_opacity 0.6s both;
                             i{
                                 display: flex;
                                 justify-content: center;
@@ -126,7 +125,7 @@ body{
                                 background-color: white;
                                 color: $color-tertiary;
                                 padding: 5px;
-                                animation: check 0.3s both;
+                                animation: check 0.6s both;
                             }
                         }
                     }

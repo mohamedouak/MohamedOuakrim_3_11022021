@@ -43,13 +43,21 @@
         margin-bottom: 15px;
     }
 }
+@keyframes width_opacity{
+    from{
+        width: 0;
+        opacity: 0;
+    }
+    to{
+        width: 65px;
+        opacity: 1;
+    }
+}
 @keyframes check{
     from{
         transform: rotate(180deg);
-        margin-right: 15px;
     }
     to{
         transform: rotate(0);
-        margin-right: 0;
     }
 }
