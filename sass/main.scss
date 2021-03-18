@@ -199,7 +199,7 @@ body{
                     i{
                         font-size: 1.5em;
                         cursor: pointer;
-                        display: block;              
+                        display: block;            
                         &:hover{
                             background: linear-gradient(to top left, $color-primary, $color-secondary);
                             -webkit-background-clip: text;
