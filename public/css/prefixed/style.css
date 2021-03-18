@@ -1,0 +1,1813 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap");
+header {
+  padding: 10px 0 10px 0;
+}
+@media screen and (min-width: 768px) {
+  header {
+    position: relative;
+  }
+}
+header i {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  font-size: 1.3em;
+  color: black;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header i {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header i {
+    font-size: 2em;
+  }
+}
+header h1 {
+  text-align: center;
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+}
+
+footer {
+  background-color: #323232;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 0 0 50px 25px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  footer {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    font-size: 1.3em;
+  }
+}
+footer h3 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: normal;
+  margin-top: 0;
+  padding-top: 18px;
+}
+footer .footer {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .text_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .text_icon .fa-utensils {
+  padding-right: 13px;
+  font-size: 0.8em;
+}
+footer .text_icon .fa-hands-helping {
+  padding-right: 7px;
+  font-size: 0.8em;
+}
+footer p {
+  margin: 0;
+}
+footer p a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: white;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes opacity_spin {
+  0% {
+    opacity: 0.9;
+    background-color: white;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opacity_spin {
+  0% {
+    opacity: 0.9;
+    background-color: white;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes opacity_heart {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes opacity_heart {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes opacity_menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes opacity_menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes margin_bottom {
+  from {
+    margin-bottom: 30px;
+  }
+  to {
+    margin-bottom: 15px;
+  }
+}
+@keyframes margin_bottom {
+  from {
+    margin-bottom: 30px;
+  }
+  to {
+    margin-bottom: 15px;
+  }
+}
+@-webkit-keyframes width_opacity {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 65px;
+    opacity: 1;
+  }
+}
+@keyframes width_opacity {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 65px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes check {
+  from {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+@keyframes check {
+  from {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+body {
+  max-width: 2540px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.card .image {
+  width: 100%;
+}
+.card .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .image img {
+    border-radius: 55px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .image img {
+    height: 400px;
+  }
+}
+.card .menu {
+  position: relative;
+  margin-top: -65px;
+  border-radius: 35px 35px 0 0;
+  background-color: #F2F2F2;
+  padding: 0 15px 0 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu {
+    border-radius: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .menu {
+    width: 90%;
+  }
+}
+.card .menu .heart_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.card .menu .heart_title h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.5em;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu .heart_title h2 {
+    font-size: 2em;
+  }
+}
+.card .menu .heart_title i {
+  font-size: 1.5em;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu .heart_title i {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .menu .heart_title i {
+    font-size: 2em;
+  }
+}
+.card .menu .heart_title i:hover {
+  background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
+  background: -o-linear-gradient(bottom right, #9356DC, #FF79DA);
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  -webkit-animation: opacity_heart 0.8s both;
+          animation: opacity_heart 0.8s both;
+}
+@media screen and (min-width: 1024px) {
+  .card .menu .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.card .menu .title {
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .card .menu .title {
+    width: 30%;
+  }
+}
+.card .menu .title .title_category {
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu .title .title_category {
+    font-size: 1.5em;
+  }
+}
+.card .menu .title .title_category .titre {
+  font-weight: 300;
+  margin: 35px 0 20px 0;
+  padding-bottom: 6px;
+  width: 40px;
+  border-bottom: 3px solid #99E2D0;
+}
+.card .menu .title .all {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.card .menu .title .all__block {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 3px 3px #e6e6e6;
+          box-shadow: 3px 3px 3px 3px #e6e6e6;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu .title .all__block {
+    font-size: 1.3em;
+  }
+}
+.card .menu .title .all__block:hover .all__block__check {
+  max-height: 75px;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  -webkit-animation: width_opacity 0.6s both;
+          animation: width_opacity 0.6s both;
+}
+.card .menu .title .all__block:hover .all__block__check i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: white;
+  color: #99E2D0;
+  padding: 5px;
+  -webkit-animation: check 0.6s both;
+          animation: check 0.6s both;
+}
+.card .menu .title .all__block:nth-child(1) {
+  -webkit-animation: opacity_menu 0.5s backwards, margin_bottom 0.5s backwards;
+          animation: opacity_menu 0.5s backwards, margin_bottom 0.5s backwards;
+}
+.card .menu .title .all__block:nth-child(2) {
+  -webkit-animation: opacity_menu 1s backwards, margin_bottom 1s backwards;
+          animation: opacity_menu 1s backwards, margin_bottom 1s backwards;
+}
+.card .menu .title .all__block:nth-child(3) {
+  -webkit-animation: opacity_menu 1.5s backwards, margin_bottom 1.5s backwards;
+          animation: opacity_menu 1.5s backwards, margin_bottom 1.5s backwards;
+}
+.card .menu .title .all__block:nth-child(4) {
+  -webkit-animation: opacity_menu 2s backwards, margin_bottom 2s backwards;
+          animation: opacity_menu 2s backwards, margin_bottom 2s backwards;
+}
+.card .menu .title .all__block__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px 0 10px 10px;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card .menu .title .all__block__text h4 {
+  margin-bottom: 5px;
+  margin-top: 0;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .card .menu .title .all__block__text h4 {
+    font-size: 1.1em;
+  }
+}
+.card .menu .title .all__block__text p {
+  margin: 0;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card .menu .title .all__block__prix {
+  padding-right: 10px;
+}
+.card .menu .title .all__block__prix span {
+  font-weight: bold;
+}
+.card .menu .title .all__block__check {
+  height: 75px;
+  width: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card .menu .title .all__block__check i {
+  opacity: 0;
+}
+.card .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0 50px 0;
+}
+.card .button .btn {
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+  border-radius: 25px;
+  color: white;
+  font-size: 1em;
+  border: none;
+  background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
+  background: -o-linear-gradient(bottom right, #9356DC, #FF79DA);
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  cursor: pointer;
+  font-weight: 500;
+  padding: 15px 40px 15px 40px;
+}
+.card .button .btn:hover {
+  opacity: 0.85;
+  -webkit-box-shadow: 2px 2px 2px 2px darkgrey;
+          box-shadow: 2px 2px 2px 2px darkgrey;
+}
+
+body {
+  max-width: 2540px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.card .image {
+  width: 100%;
+}
+.card .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .image img {
+    border-radius: 55px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .image img {
+    height: 400px;
+  }
+}
+.card .menu {
+  position: relative;
+  margin-top: -65px;
+  border-radius: 35px 35px 0 0;
+  background-color: #F2F2F2;
+  padding: 0 15px 0 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu {
+    border-radius: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .menu {
+    width: 90%;
+  }
+}
+.card .menu .heart_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.card .menu .heart_title h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.5em;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu .heart_title h2 {
+    font-size: 2em;
+  }
+}
+.card .menu .heart_title i {
+  font-size: 1.5em;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu .heart_title i {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .menu .heart_title i {
+    font-size: 2em;
+  }
+}
+.card .menu .heart_title i:hover {
+  background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
+  background: -o-linear-gradient(bottom right, #9356DC, #FF79DA);
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  -webkit-animation: opacity_heart 0.8s both;
+          animation: opacity_heart 0.8s both;
+}
+@media screen and (min-width: 1024px) {
+  .card .menu .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.card .menu .title {
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .card .menu .title {
+    width: 30%;
+  }
+}
+.card .menu .title .title_category {
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu .title .title_category {
+    font-size: 1.5em;
+  }
+}
+.card .menu .title .title_category .titre {
+  font-weight: 300;
+  margin: 35px 0 20px 0;
+  padding-bottom: 6px;
+  width: 40px;
+  border-bottom: 3px solid #99E2D0;
+}
+.card .menu .title .all {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.card .menu .title .all__block {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 3px 3px #e6e6e6;
+          box-shadow: 3px 3px 3px 3px #e6e6e6;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu .title .all__block {
+    font-size: 1.3em;
+  }
+}
+.card .menu .title .all__block:hover .all__block__check {
+  max-height: 75px;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  -webkit-animation: width_opacity 0.6s both;
+          animation: width_opacity 0.6s both;
+}
+.card .menu .title .all__block:hover .all__block__check i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: white;
+  color: #99E2D0;
+  padding: 5px;
+  -webkit-animation: check 0.6s both;
+          animation: check 0.6s both;
+}
+.card .menu .title .all__block:nth-child(1) {
+  -webkit-animation: opacity_menu 0.5s backwards, margin_bottom 0.5s backwards;
+          animation: opacity_menu 0.5s backwards, margin_bottom 0.5s backwards;
+}
+.card .menu .title .all__block:nth-child(2) {
+  -webkit-animation: opacity_menu 1s backwards, margin_bottom 1s backwards;
+          animation: opacity_menu 1s backwards, margin_bottom 1s backwards;
+}
+.card .menu .title .all__block:nth-child(3) {
+  -webkit-animation: opacity_menu 1.5s backwards, margin_bottom 1.5s backwards;
+          animation: opacity_menu 1.5s backwards, margin_bottom 1.5s backwards;
+}
+.card .menu .title .all__block:nth-child(4) {
+  -webkit-animation: opacity_menu 2s backwards, margin_bottom 2s backwards;
+          animation: opacity_menu 2s backwards, margin_bottom 2s backwards;
+}
+.card .menu .title .all__block__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px 0 10px 10px;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card .menu .title .all__block__text h4 {
+  margin-bottom: 5px;
+  margin-top: 0;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .card .menu .title .all__block__text h4 {
+    font-size: 1.1em;
+  }
+}
+.card .menu .title .all__block__text p {
+  margin: 0;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card .menu .title .all__block__prix {
+  padding-right: 10px;
+}
+.card .menu .title .all__block__prix span {
+  font-weight: bold;
+}
+.card .menu .title .all__block__check {
+  height: 75px;
+  width: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card .menu .title .all__block__check i {
+  opacity: 0;
+}
+.card .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0 50px 0;
+}
+.card .button .btn {
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+  border-radius: 25px;
+  color: white;
+  font-size: 1em;
+  border: none;
+  background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
+  background: -o-linear-gradient(bottom right, #9356DC, #FF79DA);
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  cursor: pointer;
+  font-weight: 500;
+  padding: 15px 40px 15px 40px;
+}
+.card .button .btn:hover {
+  opacity: 0.85;
+  -webkit-box-shadow: 2px 2px 2px 2px darkgrey;
+          box-shadow: 2px 2px 2px 2px darkgrey;
+}
+
+body {
+  max-width: 2540px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.card .image {
+  width: 100%;
+}
+.card .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .image img {
+    border-radius: 55px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .image img {
+    height: 400px;
+  }
+}
+.card .menu {
+  position: relative;
+  margin-top: -65px;
+  border-radius: 35px 35px 0 0;
+  background-color: #F2F2F2;
+  padding: 0 15px 0 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu {
+    border-radius: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .menu {
+    width: 90%;
+  }
+}
+.card .menu .heart_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.card .menu .heart_title h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.5em;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu .heart_title h2 {
+    font-size: 2em;
+  }
+}
+.card .menu .heart_title i {
+  font-size: 1.5em;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu .heart_title i {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .menu .heart_title i {
+    font-size: 2em;
+  }
+}
+.card .menu .heart_title i:hover {
+  background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
+  background: -o-linear-gradient(bottom right, #9356DC, #FF79DA);
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  -webkit-animation: opacity_heart 0.8s both;
+          animation: opacity_heart 0.8s both;
+}
+@media screen and (min-width: 1024px) {
+  .card .menu .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.card .menu .title {
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .card .menu .title {
+    width: 30%;
+  }
+}
+.card .menu .title .title_category {
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu .title .title_category {
+    font-size: 1.5em;
+  }
+}
+.card .menu .title .title_category .titre {
+  font-weight: 300;
+  margin: 35px 0 20px 0;
+  padding-bottom: 6px;
+  width: 40px;
+  border-bottom: 3px solid #99E2D0;
+}
+.card .menu .title .all {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.card .menu .title .all__block {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 3px 3px #e6e6e6;
+          box-shadow: 3px 3px 3px 3px #e6e6e6;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu .title .all__block {
+    font-size: 1.3em;
+  }
+}
+.card .menu .title .all__block:hover .all__block__check {
+  max-height: 75px;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  -webkit-animation: width_opacity 0.6s both;
+          animation: width_opacity 0.6s both;
+}
+.card .menu .title .all__block:hover .all__block__check i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: white;
+  color: #99E2D0;
+  padding: 5px;
+  -webkit-animation: check 0.6s both;
+          animation: check 0.6s both;
+}
+.card .menu .title .all__block:nth-child(1) {
+  -webkit-animation: opacity_menu 0.5s backwards, margin_bottom 0.5s backwards;
+          animation: opacity_menu 0.5s backwards, margin_bottom 0.5s backwards;
+}
+.card .menu .title .all__block:nth-child(2) {
+  -webkit-animation: opacity_menu 1s backwards, margin_bottom 1s backwards;
+          animation: opacity_menu 1s backwards, margin_bottom 1s backwards;
+}
+.card .menu .title .all__block:nth-child(3) {
+  -webkit-animation: opacity_menu 1.5s backwards, margin_bottom 1.5s backwards;
+          animation: opacity_menu 1.5s backwards, margin_bottom 1.5s backwards;
+}
+.card .menu .title .all__block:nth-child(4) {
+  -webkit-animation: opacity_menu 2s backwards, margin_bottom 2s backwards;
+          animation: opacity_menu 2s backwards, margin_bottom 2s backwards;
+}
+.card .menu .title .all__block__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px 0 10px 10px;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card .menu .title .all__block__text h4 {
+  margin-bottom: 5px;
+  margin-top: 0;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .card .menu .title .all__block__text h4 {
+    font-size: 1.1em;
+  }
+}
+.card .menu .title .all__block__text p {
+  margin: 0;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card .menu .title .all__block__prix {
+  padding-right: 10px;
+}
+.card .menu .title .all__block__prix span {
+  font-weight: bold;
+}
+.card .menu .title .all__block__check {
+  height: 75px;
+  width: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card .menu .title .all__block__check i {
+  opacity: 0;
+}
+.card .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0 50px 0;
+}
+.card .button .btn {
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+  border-radius: 25px;
+  color: white;
+  font-size: 1em;
+  border: none;
+  background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
+  background: -o-linear-gradient(bottom right, #9356DC, #FF79DA);
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  cursor: pointer;
+  font-weight: 500;
+  padding: 15px 40px 15px 40px;
+}
+.card .button .btn:hover {
+  opacity: 0.85;
+  -webkit-box-shadow: 2px 2px 2px 2px darkgrey;
+          box-shadow: 2px 2px 2px 2px darkgrey;
+}
+
+body {
+  max-width: 2540px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.card .image {
+  width: 100%;
+}
+.card .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .image img {
+    border-radius: 55px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .image img {
+    height: 400px;
+  }
+}
+.card .menu {
+  position: relative;
+  margin-top: -65px;
+  border-radius: 35px 35px 0 0;
+  background-color: #F2F2F2;
+  padding: 0 15px 0 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu {
+    border-radius: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .menu {
+    width: 90%;
+  }
+}
+.card .menu .heart_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.card .menu .heart_title h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.5em;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu .heart_title h2 {
+    font-size: 2em;
+  }
+}
+.card .menu .heart_title i {
+  font-size: 1.5em;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu .heart_title i {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card .menu .heart_title i {
+    font-size: 2em;
+  }
+}
+.card .menu .heart_title i:hover {
+  background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
+  background: -o-linear-gradient(bottom right, #9356DC, #FF79DA);
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  -webkit-animation: opacity_heart 0.8s both;
+          animation: opacity_heart 0.8s both;
+}
+@media screen and (min-width: 1024px) {
+  .card .menu .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.card .menu .title {
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .card .menu .title {
+    width: 30%;
+  }
+}
+.card .menu .title .title_category {
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu .title .title_category {
+    font-size: 1.5em;
+  }
+}
+.card .menu .title .title_category .titre {
+  font-weight: 300;
+  margin: 35px 0 20px 0;
+  padding-bottom: 6px;
+  width: 40px;
+  border-bottom: 3px solid #99E2D0;
+}
+.card .menu .title .all {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.card .menu .title .all__block {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 3px 3px #e6e6e6;
+          box-shadow: 3px 3px 3px 3px #e6e6e6;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card .menu .title .all__block {
+    font-size: 1.3em;
+  }
+}
+.card .menu .title .all__block:hover .all__block__check {
+  max-height: 75px;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  -webkit-animation: width_opacity 0.6s both;
+          animation: width_opacity 0.6s both;
+}
+.card .menu .title .all__block:hover .all__block__check i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: white;
+  color: #99E2D0;
+  padding: 5px;
+  -webkit-animation: check 0.6s both;
+          animation: check 0.6s both;
+}
+.card .menu .title .all__block:nth-child(1) {
+  -webkit-animation: opacity_menu 0.5s backwards, margin_bottom 0.5s backwards;
+          animation: opacity_menu 0.5s backwards, margin_bottom 0.5s backwards;
+}
+.card .menu .title .all__block:nth-child(2) {
+  -webkit-animation: opacity_menu 1s backwards, margin_bottom 1s backwards;
+          animation: opacity_menu 1s backwards, margin_bottom 1s backwards;
+}
+.card .menu .title .all__block:nth-child(3) {
+  -webkit-animation: opacity_menu 1.5s backwards, margin_bottom 1.5s backwards;
+          animation: opacity_menu 1.5s backwards, margin_bottom 1.5s backwards;
+}
+.card .menu .title .all__block:nth-child(4) {
+  -webkit-animation: opacity_menu 2s backwards, margin_bottom 2s backwards;
+          animation: opacity_menu 2s backwards, margin_bottom 2s backwards;
+}
+.card .menu .title .all__block__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px 0 10px 10px;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card .menu .title .all__block__text h4 {
+  margin-bottom: 5px;
+  margin-top: 0;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .card .menu .title .all__block__text h4 {
+    font-size: 1.1em;
+  }
+}
+.card .menu .title .all__block__text p {
+  margin: 0;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card .menu .title .all__block__prix {
+  padding-right: 10px;
+}
+.card .menu .title .all__block__prix span {
+  font-weight: bold;
+}
+.card .menu .title .all__block__check {
+  height: 75px;
+  width: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card .menu .title .all__block__check i {
+  opacity: 0;
+}
+.card .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0 50px 0;
+}
+.card .button .btn {
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+  border-radius: 25px;
+  color: white;
+  font-size: 1em;
+  border: none;
+  background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
+  background: -o-linear-gradient(bottom right, #9356DC, #FF79DA);
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  cursor: pointer;
+  font-weight: 500;
+  padding: 15px 40px 15px 40px;
+}
+.card .button .btn:hover {
+  opacity: 0.85;
+  -webkit-box-shadow: 2px 2px 2px 2px darkgrey;
+          box-shadow: 2px 2px 2px 2px darkgrey;
+}
+
+body {
+  max-width: 2540px;
+  margin: 0 auto;
+  position: relative;
+}
+body .loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  -webkit-animation: opacity_spin 3s linear;
+          animation: opacity_spin 3s linear;
+  z-index: -1;
+}
+body .loader__spiner {
+  width: 150px;
+  height: 150px;
+  border-top: 20px solid #9356DC;
+  border-bottom: 20px solid #FF79DA;
+  border-left: 20px solid #99E2D0;
+  border-right: 20px solid #99E2D0;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-animation: spin 3s both;
+          animation: spin 3s both;
+}
+
+.description {
+  background-color: #F6F6F6;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.description .localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F6F6F6;
+  background: -webkit-gradient(linear, left bottom, left top, from(#F6F6F6), color-stop(98%), to(#CECECE));
+  background: -o-linear-gradient(bottom, #F6F6F6, 98%, #CECECE);
+  background: linear-gradient(to top, #F6F6F6, 98%, #CECECE);
+  -webkit-filter: contrast(90%);
+          filter: contrast(90%);
+}
+.description .localisation__icon {
+  padding-right: 15px;
+}
+.description .localisation p {
+  padding-right: 45px;
+  font-weight: 500;
+}
+.description .presentation {
+  padding: 40px 0 60px 0;
+}
+.description .presentation p {
+  font-size: 1.1em;
+  font-weight: 300;
+  padding: 0 20px 0 20px;
+}
+.description .presentation h2 {
+  padding: 0 70px 0 70px;
+}
+.description .presentation .btn {
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+  border-radius: 25px;
+  color: white;
+  font-size: 1em;
+  border: none;
+  background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
+  background: -o-linear-gradient(bottom right, #9356DC, #FF79DA);
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  cursor: pointer;
+  font-weight: 500;
+}
+.description .presentation .btn:hover {
+  opacity: 0.85;
+  -webkit-box-shadow: 2px 2px 2px 2px darkgrey;
+          box-shadow: 2px 2px 2px 2px darkgrey;
+}
+
+.fonctionnement {
+  padding: 30px 20px 30px 20px;
+  font-family: "Roboto", sans-serif;
+}
+.fonctionnement h2 {
+  margin-bottom: 0;
+  padding-bottom: 25px;
+}
+.fonctionnement__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement__list {
+    font-size: 0.8em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.fonctionnement .list {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F5F5F5;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  -webkit-box-shadow: 3px 3px 3px 3px #E6E6E6;
+          box-shadow: 3px 3px 3px 3px #E6E6E6;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .fonctionnement .list {
+    width: 27%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement .list {
+    width: 25%;
+  }
+}
+.fonctionnement .list:hover {
+  background-color: #F5EDFF;
+}
+.fonctionnement .list:hover .icon_text i {
+  color: #9356DC;
+}
+.fonctionnement .list .number {
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1em;
+  border-radius: 50%;
+  color: white;
+  background-color: #9356DC;
+  position: absolute;
+  left: -14px;
+  top: 15px;
+}
+.fonctionnement .list .icon_text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .fonctionnement .list .icon_text {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+.fonctionnement .list .icon_text i {
+  color: #B1B1B1;
+  font-size: 1.2em;
+}
+.fonctionnement .list .icon_text p {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.restaurants {
+  font-family: "Roboto", sans-serif;
+  background-color: #F6F6F6;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.restaurants h2 {
+  padding: 40px 0 0 20px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants h2 {
+    padding-left: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .restaurants .block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants .block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+.restaurants .restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .restaurants .restaurant {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants .restaurant {
+    width: 22%;
+  }
+}
+.restaurants .restaurant__block {
+  width: 90%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px 20px 20px 20px;
+  background-color: white;
+  -webkit-box-shadow: 4px 4px 4px 4px #f2f2f2;
+          box-shadow: 4px 4px 4px 4px #f2f2f2;
+}
+.restaurants .restaurant__block .new {
+  background-color: #99E2D0;
+  color: #578176;
+  font-weight: bold;
+  padding: 5px 10px 5px 10px;
+  border-radius: 2px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+.restaurants .restaurant__block figcaption {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants .restaurant__block figcaption {
+    width: 100%;
+    font-size: 0.9em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants .restaurant__block figcaption .text {
+    padding-left: 10px;
+  }
+}
+.restaurants .restaurant__block figcaption .text h3 {
+  margin-bottom: 5px;
+}
+.restaurants .restaurant__block figcaption .text p {
+  margin-top: 5px;
+}
+.restaurants .restaurant__block figcaption .heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants .restaurant__block figcaption .heart {
+    padding-right: 10px;
+  }
+}
+.restaurants .restaurant__block figcaption .heart i {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: block;
+}
+.restaurants .restaurant__block figcaption .heart i:hover {
+  background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
+  background: -o-linear-gradient(bottom right, #9356DC, #FF79DA);
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  -webkit-animation: opacity_heart 0.8s both;
+          animation: opacity_heart 0.8s both;
+}
+.restaurants .restaurant a {
+  position: relative;
+  width: 100%;
+}
+.restaurants img {
+  width: 100%;
+  height: 45vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .restaurants img {
+    height: 25vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants img {
+    height: 15vw;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Nhc3MvbWFpbi5zY3NzIiwiLi4vLi4vLi4vc2Fzcy9oZWFkZXIuc2NzcyIsIi4uL3N0eWxlLmNzcyIsIi4uLy4uLy4uL3Nhc3MvZm9vdGVyLnNjc3MiLCIuLi8uLi8uLi9zYXNzL2FuaW1hdGlvbnMuc2NzcyIsIi4uLy4uLy4uL3Nhc3MvcGFnZXMvcGFnZTEuc2NzcyIsIi4uLy4uLy4uL3Nhc3MvdmFyaWFibGVzLnNjc3MiLCIuLi8uLi8uLi9zYXNzL21peGlucy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFRLDhFQUFBO0FBQ0EsZ0dBQUE7QUNEUjtFQUNJLHNCQUFBO0FDR0o7QURGSTtFQUZKO0lBR1Esa0JBQUE7RUNLTjtBQUNGO0FESkk7RUFDSSxrQkFBQTtFQUNBLFVBQUE7RUFDQSxTQUFBO0VBQ0EsZ0JBQUE7RUFDQSxZQUFBO0FDTVI7QURMUTtFQU5KO0lBT1EsY0FBQTtFQ1FWO0FBQ0Y7QURQUTtFQVRKO0lBVVEsY0FBQTtFQ1VWO0FBQ0Y7QURQSTtFQUNJLGtCQUFBO0VBQ0EsaUNBQUE7RUFDQSxTQUFBO0FDU1I7QURSUTtFQUpKO0lBS1EsZ0JBQUE7RUNXVjtBQUNGO0FEVlE7RUFQSjtJQVFRLGdCQUFBO0VDYVY7QUFDRjs7QUN6Q0E7RUFDSSx5QkFBQTtFQUNBLFlBQUE7RUFDQSxpQ0FBQTtFQUNBLHNCQUFBO0FENENKO0FDM0NJO0VBTEo7SUFNUSxnQkFBQTtFRDhDTjtBQUNGO0FDN0NJO0VBUko7SUFTUSxnQkFBQTtFRGdETjtBQUNGO0FDL0NJO0VBQ0ksb0NBQUE7RUFDQSxtQkFBQTtFQUNBLGFBQUE7RUFDQSxpQkFBQTtBRGlEUjtBQy9DSTtFQUNJLGFBQUE7RUFDQSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLDRCQUFBO0VBQUEsNkJBQUE7TUFBQSwwQkFBQTtVQUFBLHNCQUFBO0VBQ0EseUJBQUE7TUFBQSxzQkFBQTtVQUFBLDhCQUFBO0FEaURSO0FDL0NJO0VBQ0ksb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsbUJBQUE7QURpRFI7QUNoRFE7RUFDSSxtQkFBQTtFQUNBLGdCQUFBO0FEa0RaO0FDaERRO0VBQ0ksa0JBQUE7RUFDQSxnQkFBQTtBRGtEWjtBQy9DSTtFQUNJLFNBQUE7QURpRFI7QUNoRFE7RUFDSSxrQ0FBQTtVQUFBLDBCQUFBO0VBQ0EsWUFBQTtBRGtEWjs7QUV6RkE7RUFDSTtJQUNJLCtCQUFBO1lBQUEsdUJBQUE7SUFDQSxVQUFBO0VGNEZOO0VFMUZFO0lBQ0ksaUNBQUE7WUFBQSx5QkFBQTtJQUNBLFVBQUE7RUY0Rk47QUFDRjs7QUVwR0E7RUFDSTtJQUNJLCtCQUFBO1lBQUEsdUJBQUE7SUFDQSxVQUFBO0VGNEZOO0VFMUZFO0lBQ0ksaUNBQUE7WUFBQSx5QkFBQTtJQUNBLFVBQUE7RUY0Rk47QUFDRjtBRTFGQTtFQUNJO0lBQ0ksWUFBQTtJQUNBLHVCQUFBO0lBQ0EsVUFBQTtFRjRGTjtFRTFGRTtJQUNJLFVBQUE7RUY0Rk47QUFDRjtBRXBHQTtFQUNJO0lBQ0ksWUFBQTtJQUNBLHVCQUFBO0lBQ0EsVUFBQTtFRjRGTjtFRTFGRTtJQUNJLFVBQUE7RUY0Rk47QUFDRjtBRTFGQTtFQUNJO0lBQ0ksMkJBQUE7WUFBQSxtQkFBQTtJQUNBLFVBQUE7RUY0Rk47RUUxRkU7SUFDSSwyQkFBQTtZQUFBLG1CQUFBO0VGNEZOO0VFMUZFO0lBQ0ksMkJBQUE7WUFBQSxtQkFBQTtJQUNBLFVBQUE7RUY0Rk47QUFDRjtBRXZHQTtFQUNJO0lBQ0ksMkJBQUE7WUFBQSxtQkFBQTtJQUNBLFVBQUE7RUY0Rk47RUUxRkU7SUFDSSwyQkFBQTtZQUFBLG1CQUFBO0VGNEZOO0VFMUZFO0lBQ0ksMkJBQUE7WUFBQSxtQkFBQTtJQUNBLFVBQUE7RUY0Rk47QUFDRjtBRTFGQTtFQUNJO0lBQ0ksVUFBQTtFRjRGTjtFRTFGRTtJQUNJLFVBQUE7RUY0Rk47QUFDRjtBRWxHQTtFQUNJO0lBQ0ksVUFBQTtFRjRGTjtFRTFGRTtJQUNJLFVBQUE7RUY0Rk47QUFDRjtBRXpGQTtFQUNJO0lBQ0ksbUJBQUE7RUYyRk47RUV6RkU7SUFDSSxtQkFBQTtFRjJGTjtBQUNGO0FFakdBO0VBQ0k7SUFDSSxtQkFBQTtFRjJGTjtFRXpGRTtJQUNJLG1CQUFBO0VGMkZOO0FBQ0Y7QUV6RkE7RUFDSTtJQUNJLFFBQUE7SUFDQSxVQUFBO0VGMkZOO0VFekZFO0lBQ0ksV0FBQTtJQUNBLFVBQUE7RUYyRk47QUFDRjtBRW5HQTtFQUNJO0lBQ0ksUUFBQTtJQUNBLFVBQUE7RUYyRk47RUV6RkU7SUFDSSxXQUFBO0lBQ0EsVUFBQTtFRjJGTjtBQUNGO0FFekZBO0VBQ0k7SUFDSSxpQ0FBQTtZQUFBLHlCQUFBO0VGMkZOO0VFekZFO0lBQ0ksNEJBQUE7WUFBQSxvQkFBQTtFRjJGTjtBQUNGO0FFakdBO0VBQ0k7SUFDSSxpQ0FBQTtZQUFBLHlCQUFBO0VGMkZOO0VFekZFO0lBQ0ksNEJBQUE7WUFBQSxvQkFBQTtFRjJGTjtBQUNGO0FHN0pBO0VBQ0ksaUJBQUE7RUFDQSxjQUFBO0FIK0pKOztBRzVKSTtFQURKO0lBRVEsb0JBQUE7SUFBQSxvQkFBQTtJQUFBLGFBQUE7SUFDQSxtQkFBQTtRQUFBLGVBQUE7SUFDQSx3QkFBQTtRQUFBLHFCQUFBO1lBQUEsdUJBQUE7RUhnS047QUFDRjtBRy9KSTtFQUNJLFdBQUE7QUhpS1I7QUdoS1E7RUFDSSxXQUFBO0VBQ0Esb0JBQUE7S0FBQSxpQkFBQTtFQUNBLGFBQUE7QUhrS1o7QUdqS1k7RUFKSjtJQUtRLG1CQUFBO0VIb0tkO0FBQ0Y7QUduS1k7RUFQSjtJQVFRLGFBQUE7RUhzS2Q7QUFDRjtBR25LSTtFQUNHLGtCQUFBO0VBQ0EsaUJBQUE7RUFDQSw0QkFBQTtFQUNBLHlCQUFBO0VBQ0Esc0JBQUE7QUhxS1A7QUdwS087RUFOSDtJQU9PLGdCQUFBO0VIdUtUO0FBQ0Y7QUd0S087RUFUSDtJQVVPLFVBQUE7RUh5S1Q7QUFDRjtBR3hLTztFQUNLLG9CQUFBO0VBQUEsb0JBQUE7RUFBQSxhQUFBO0VBQ0EseUJBQUE7TUFBQSxzQkFBQTtVQUFBLDhCQUFBO0VBQ0EseUJBQUE7TUFBQSxzQkFBQTtVQUFBLG1CQUFBO0VBQ0Esa0JBQUE7QUgwS1o7QUd6S1c7RUFDSSxvQ0FBQTtFQUNBLGdCQUFBO0FIMktmO0FHMUtlO0VBSEo7SUFJUSxjQUFBO0VINktqQjtBQUNGO0FHM0tXO0VBQ0ssZ0JBQUE7RUFDQSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxTQUFBO0VBQ0EsV0FBQTtBSDZLaEI7QUc1S2dCO0VBTkw7SUFPUyxjQUFBO0VIK0tsQjtBQUNGO0FHOUtnQjtFQVRMO0lBVVMsY0FBQTtFSGlMbEI7QUFDRjtBR2hMZ0I7RUFDSSx3RkFBQTtFQUFBLDhEQUFBO0VBQUEsMERBQUE7RUFDQSw2QkFBQTtFQUNBLG9DQUFBO0VBQ0EsaUJBQUE7RUFDQSwwQ0FBQTtVQUFBLGtDQUFBO0FIa0xwQjtBRzdLUTtFQUREO0lBRUssb0JBQUE7SUFBQSxvQkFBQTtJQUFBLGFBQUE7SUFDQSx5QkFBQTtRQUFBLHNCQUFBO1lBQUEsOEJBQUE7RUhnTFY7QUFDRjtBRzlLTztFQUNLLGlDQUFBO0VBQ0Esb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSw0QkFBQTtFQUFBLDZCQUFBO01BQUEsMEJBQUE7VUFBQSxzQkFBQTtFQUNBLHlCQUFBO01BQUEsc0JBQUE7VUFBQSxtQkFBQTtBSGdMWjtBRy9LWTtFQUxMO0lBTVMsVUFBQTtFSGtMZDtBQUNGO0FHakxZO0VBQ0ksV0FBQTtBSG1MaEI7QUdsTGdCO0VBRko7SUFHUSxnQkFBQTtFSHFMbEI7QUFDRjtBR3BMZ0I7RUFDQSxnQkFBQTtFQUNBLHFCQUFBO0VBQ0EsbUJBQUE7RUFDQSxXQUFBO0VBQ0EsZ0NBQUE7QUhzTGhCO0FHbkxXO0VBQ0ksV0FBQTtFQUNDLG9CQUFBO0VBQUEsb0JBQUE7RUFBQSxhQUFBO0VBQ0EsNEJBQUE7RUFBQSw2QkFBQTtNQUFBLDBCQUFBO1VBQUEsc0JBQUE7RUFDQSx5QkFBQTtNQUFBLDZCQUFBO0FIcUxoQjtBR3BMZ0I7RUFDSSxlQUFBO0VBQ0Esb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsOEJBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsbUJBQUE7RUFDQSx1QkFBQTtFQUNBLG1CQUFBO0VBQ0EsMkNBQUE7VUFBQSxtQ0FBQTtFQUNBLG1CQUFBO0FIc0xwQjtBR3JMb0I7RUFUSjtJQVVRLGdCQUFBO0VId0x0QjtBQUNGO0FHdEx3QjtFQUNJLGdCQUFBO0VBQ0EseUJDbEhYO0VEbUhXLDRCQUFBO0VBQ0EsMENBQUE7VUFBQSxrQ0FBQTtBSHdMNUI7QUd2TDRCO0VBQ0ksb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx3QkFBQTtNQUFBLHFCQUFBO1VBQUEsdUJBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsbUJBQUE7RUFDQSxVQUFBO0VBQ0Esa0JBQUE7RUFDQSx1QkFBQTtFQUNBLGNDNUhmO0VENkhlLFlBQUE7RUFDQSxrQ0FBQTtVQUFBLDBCQUFBO0FIeUxoQztBR3JMb0I7RUFDSSw0RUFBQTtVQUFBLG9FQUFBO0FIdUx4QjtBR3JMb0I7RUFDSSx3RUFBQTtVQUFBLGdFQUFBO0FIdUx4QjtBR3JMb0I7RUFDSSw0RUFBQTtVQUFBLG9FQUFBO0FIdUx4QjtBR3JMb0I7RUFDSSx3RUFBQTtVQUFBLGdFQUFBO0FIdUx4QjtBR3JMb0I7RUFDSSxtQkFBQTtNQUFBLFdBQUE7VUFBQSxPQUFBO0VBQ0EseUJBQUE7RUFDQSwwQkFBQTtLQUFBLHVCQUFBO0VBQ0EsbUJBQUE7RUFDQSxnQkFBQTtBSHVMeEI7QUd0THdCO0VBQ0ksa0JBQUE7RUFDQSxhQUFBO0VBQ0EsMEJBQUE7S0FBQSx1QkFBQTtFQUNBLG1CQUFBO0VBQ0EsZ0JBQUE7QUh3TDVCO0FHdkw0QjtFQU5KO0lBT1EsZ0JBQUE7RUgwTDlCO0FBQ0Y7QUd4THdCO0VBQ0ksU0FBQTtFQUNBLDBCQUFBO0tBQUEsdUJBQUE7RUFDQSxtQkFBQTtFQUNBLGdCQUFBO0FIMEw1QjtBR3ZMb0I7RUFDSSxtQkFBQTtBSHlMeEI7QUd4THdCO0VBQ0ksaUJBQUE7QUgwTDVCO0FHdkxvQjtFQUNJLFlBQUE7RUFDQSxRQUFBO0VBQ0Esb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx3QkFBQTtNQUFBLHFCQUFBO1VBQUEsdUJBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsbUJBQUE7QUh5THhCO0FHeEx3QjtFQUNJLFVBQUE7QUgwTDVCO0FHbkxJO0VBQ0ksb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx3QkFBQTtNQUFBLHFCQUFBO1VBQUEsdUJBQUE7RUFDQSxzQkFBQTtBSHFMUjtBR3BMUTtFRWpMQSxpQ0FBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLFlBQUE7RUFDQSxjQUFBO0VBQ0EsWUFBQTtFQUNBLHdGQUFBO0VBQUEsOERBQUE7RUFBQSwwREFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFRjJLQSw0QkFBQTtBSDhMUjtBRzdMWTtFQUNJLGFBQUE7RUFDQSw0Q0FBQTtVQUFBLG9DQUFBO0FIK0xoQjs7QUduWUE7RUFDSSxpQkFBQTtFQUNBLGNBQUE7QUhzWUo7O0FHbllJO0VBREo7SUFFUSxvQkFBQTtJQUFBLG9CQUFBO0lBQUEsYUFBQTtJQUNBLG1CQUFBO1FBQUEsZUFBQTtJQUNBLHdCQUFBO1FBQUEscUJBQUE7WUFBQSx1QkFBQTtFSHVZTjtBQUNGO0FHdFlJO0VBQ0ksV0FBQTtBSHdZUjtBR3ZZUTtFQUNJLFdBQUE7RUFDQSxvQkFBQTtLQUFBLGlCQUFBO0VBQ0EsYUFBQTtBSHlZWjtBR3hZWTtFQUpKO0lBS1EsbUJBQUE7RUgyWWQ7QUFDRjtBRzFZWTtFQVBKO0lBUVEsYUFBQTtFSDZZZDtBQUNGO0FHMVlJO0VBQ0csa0JBQUE7RUFDQSxpQkFBQTtFQUNBLDRCQUFBO0VBQ0EseUJBQUE7RUFDQSxzQkFBQTtBSDRZUDtBRzNZTztFQU5IO0lBT08sZ0JBQUE7RUg4WVQ7QUFDRjtBRzdZTztFQVRIO0lBVU8sVUFBQTtFSGdaVDtBQUNGO0FHL1lPO0VBQ0ssb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsOEJBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsbUJBQUE7RUFDQSxrQkFBQTtBSGlaWjtBR2haVztFQUNJLG9DQUFBO0VBQ0EsZ0JBQUE7QUhrWmY7QUdqWmU7RUFISjtJQUlRLGNBQUE7RUhvWmpCO0FBQ0Y7QUdsWlc7RUFDSyxnQkFBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtFQUNBLFNBQUE7RUFDQSxXQUFBO0FIb1poQjtBR25aZ0I7RUFOTDtJQU9TLGNBQUE7RUhzWmxCO0FBQ0Y7QUdyWmdCO0VBVEw7SUFVUyxjQUFBO0VId1psQjtBQUNGO0FHdlpnQjtFQUNJLHdGQUFBO0VBQUEsOERBQUE7RUFBQSwwREFBQTtFQUNBLDZCQUFBO0VBQ0Esb0NBQUE7RUFDQSxpQkFBQTtFQUNBLDBDQUFBO1VBQUEsa0NBQUE7QUh5WnBCO0FHcFpRO0VBREQ7SUFFSyxvQkFBQTtJQUFBLG9CQUFBO0lBQUEsYUFBQTtJQUNBLHlCQUFBO1FBQUEsc0JBQUE7WUFBQSw4QkFBQTtFSHVaVjtBQUNGO0FHclpPO0VBQ0ssaUNBQUE7RUFDQSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLDRCQUFBO0VBQUEsNkJBQUE7TUFBQSwwQkFBQTtVQUFBLHNCQUFBO0VBQ0EseUJBQUE7TUFBQSxzQkFBQTtVQUFBLG1CQUFBO0FIdVpaO0FHdFpZO0VBTEw7SUFNUyxVQUFBO0VIeVpkO0FBQ0Y7QUd4Wlk7RUFDSSxXQUFBO0FIMFpoQjtBR3paZ0I7RUFGSjtJQUdRLGdCQUFBO0VINFpsQjtBQUNGO0FHM1pnQjtFQUNBLGdCQUFBO0VBQ0EscUJBQUE7RUFDQSxtQkFBQTtFQUNBLFdBQUE7RUFDQSxnQ0FBQTtBSDZaaEI7QUcxWlc7RUFDSSxXQUFBO0VBQ0Msb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSw0QkFBQTtFQUFBLDZCQUFBO01BQUEsMEJBQUE7VUFBQSxzQkFBQTtFQUNBLHlCQUFBO01BQUEsNkJBQUE7QUg0WmhCO0FHM1pnQjtFQUNJLGVBQUE7RUFDQSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLHlCQUFBO01BQUEsc0JBQUE7VUFBQSw4QkFBQTtFQUNBLHlCQUFBO01BQUEsc0JBQUE7VUFBQSxtQkFBQTtFQUNBLHVCQUFBO0VBQ0EsbUJBQUE7RUFDQSwyQ0FBQTtVQUFBLG1DQUFBO0VBQ0EsbUJBQUE7QUg2WnBCO0FHNVpvQjtFQVRKO0lBVVEsZ0JBQUE7RUgrWnRCO0FBQ0Y7QUc3WndCO0VBQ0ksZ0JBQUE7RUFDQSx5QkNsSFg7RURtSFcsNEJBQUE7RUFDQSwwQ0FBQTtVQUFBLGtDQUFBO0FIK1o1QjtBRzlaNEI7RUFDSSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLHdCQUFBO01BQUEscUJBQUE7VUFBQSx1QkFBQTtFQUNBLHlCQUFBO01BQUEsc0JBQUE7VUFBQSxtQkFBQTtFQUNBLFVBQUE7RUFDQSxrQkFBQTtFQUNBLHVCQUFBO0VBQ0EsY0M1SGY7RUQ2SGUsWUFBQTtFQUNBLGtDQUFBO1VBQUEsMEJBQUE7QUhnYWhDO0FHNVpvQjtFQUNJLDRFQUFBO1VBQUEsb0VBQUE7QUg4WnhCO0FHNVpvQjtFQUNJLHdFQUFBO1VBQUEsZ0VBQUE7QUg4WnhCO0FHNVpvQjtFQUNJLDRFQUFBO1VBQUEsb0VBQUE7QUg4WnhCO0FHNVpvQjtFQUNJLHdFQUFBO1VBQUEsZ0VBQUE7QUg4WnhCO0FHNVpvQjtFQUNJLG1CQUFBO01BQUEsV0FBQTtVQUFBLE9BQUE7RUFDQSx5QkFBQTtFQUNBLDBCQUFBO0tBQUEsdUJBQUE7RUFDQSxtQkFBQTtFQUNBLGdCQUFBO0FIOFp4QjtBRzdad0I7RUFDSSxrQkFBQTtFQUNBLGFBQUE7RUFDQSwwQkFBQTtLQUFBLHVCQUFBO0VBQ0EsbUJBQUE7RUFDQSxnQkFBQTtBSCtaNUI7QUc5WjRCO0VBTko7SUFPUSxnQkFBQTtFSGlhOUI7QUFDRjtBRy9ad0I7RUFDSSxTQUFBO0VBQ0EsMEJBQUE7S0FBQSx1QkFBQTtFQUNBLG1CQUFBO0VBQ0EsZ0JBQUE7QUhpYTVCO0FHOVpvQjtFQUNJLG1CQUFBO0FIZ2F4QjtBRy9ad0I7RUFDSSxpQkFBQTtBSGlhNUI7QUc5Wm9CO0VBQ0ksWUFBQTtFQUNBLFFBQUE7RUFDQSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLHdCQUFBO01BQUEscUJBQUE7VUFBQSx1QkFBQTtFQUNBLHlCQUFBO01BQUEsc0JBQUE7VUFBQSxtQkFBQTtBSGdheEI7QUcvWndCO0VBQ0ksVUFBQTtBSGlhNUI7QUcxWkk7RUFDSSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLHdCQUFBO01BQUEscUJBQUE7VUFBQSx1QkFBQTtFQUNBLHNCQUFBO0FINFpSO0FHM1pRO0VFakxBLGlDQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsWUFBQTtFQUNBLGNBQUE7RUFDQSxZQUFBO0VBQ0Esd0ZBQUE7RUFBQSw4REFBQTtFQUFBLDBEQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0VGMktBLDRCQUFBO0FIcWFSO0FHcGFZO0VBQ0ksYUFBQTtFQUNBLDRDQUFBO1VBQUEsb0NBQUE7QUhzYWhCOztBRzFtQkE7RUFDSSxpQkFBQTtFQUNBLGNBQUE7QUg2bUJKOztBRzFtQkk7RUFESjtJQUVRLG9CQUFBO0lBQUEsb0JBQUE7SUFBQSxhQUFBO0lBQ0EsbUJBQUE7UUFBQSxlQUFBO0lBQ0Esd0JBQUE7UUFBQSxxQkFBQTtZQUFBLHVCQUFBO0VIOG1CTjtBQUNGO0FHN21CSTtFQUNJLFdBQUE7QUgrbUJSO0FHOW1CUTtFQUNJLFdBQUE7RUFDQSxvQkFBQTtLQUFBLGlCQUFBO0VBQ0EsYUFBQTtBSGduQlo7QUcvbUJZO0VBSko7SUFLUSxtQkFBQTtFSGtuQmQ7QUFDRjtBR2puQlk7RUFQSjtJQVFRLGFBQUE7RUhvbkJkO0FBQ0Y7QUdqbkJJO0VBQ0csa0JBQUE7RUFDQSxpQkFBQTtFQUNBLDRCQUFBO0VBQ0EseUJBQUE7RUFDQSxzQkFBQTtBSG1uQlA7QUdsbkJPO0VBTkg7SUFPTyxnQkFBQTtFSHFuQlQ7QUFDRjtBR3BuQk87RUFUSDtJQVVPLFVBQUE7RUh1bkJUO0FBQ0Y7QUd0bkJPO0VBQ0ssb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsOEJBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsbUJBQUE7RUFDQSxrQkFBQTtBSHduQlo7QUd2bkJXO0VBQ0ksb0NBQUE7RUFDQSxnQkFBQTtBSHluQmY7QUd4bkJlO0VBSEo7SUFJUSxjQUFBO0VIMm5CakI7QUFDRjtBR3puQlc7RUFDSyxnQkFBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtFQUNBLFNBQUE7RUFDQSxXQUFBO0FIMm5CaEI7QUcxbkJnQjtFQU5MO0lBT1MsY0FBQTtFSDZuQmxCO0FBQ0Y7QUc1bkJnQjtFQVRMO0lBVVMsY0FBQTtFSCtuQmxCO0FBQ0Y7QUc5bkJnQjtFQUNJLHdGQUFBO0VBQUEsOERBQUE7RUFBQSwwREFBQTtFQUNBLDZCQUFBO0VBQ0Esb0NBQUE7RUFDQSxpQkFBQTtFQUNBLDBDQUFBO1VBQUEsa0NBQUE7QUhnb0JwQjtBRzNuQlE7RUFERDtJQUVLLG9CQUFBO0lBQUEsb0JBQUE7SUFBQSxhQUFBO0lBQ0EseUJBQUE7UUFBQSxzQkFBQTtZQUFBLDhCQUFBO0VIOG5CVjtBQUNGO0FHNW5CTztFQUNLLGlDQUFBO0VBQ0Esb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSw0QkFBQTtFQUFBLDZCQUFBO01BQUEsMEJBQUE7VUFBQSxzQkFBQTtFQUNBLHlCQUFBO01BQUEsc0JBQUE7VUFBQSxtQkFBQTtBSDhuQlo7QUc3bkJZO0VBTEw7SUFNUyxVQUFBO0VIZ29CZDtBQUNGO0FHL25CWTtFQUNJLFdBQUE7QUhpb0JoQjtBR2hvQmdCO0VBRko7SUFHUSxnQkFBQTtFSG1vQmxCO0FBQ0Y7QUdsb0JnQjtFQUNBLGdCQUFBO0VBQ0EscUJBQUE7RUFDQSxtQkFBQTtFQUNBLFdBQUE7RUFDQSxnQ0FBQTtBSG9vQmhCO0FHam9CVztFQUNJLFdBQUE7RUFDQyxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLDRCQUFBO0VBQUEsNkJBQUE7TUFBQSwwQkFBQTtVQUFBLHNCQUFBO0VBQ0EseUJBQUE7TUFBQSw2QkFBQTtBSG1vQmhCO0FHbG9CZ0I7RUFDSSxlQUFBO0VBQ0Esb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsOEJBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsbUJBQUE7RUFDQSx1QkFBQTtFQUNBLG1CQUFBO0VBQ0EsMkNBQUE7VUFBQSxtQ0FBQTtFQUNBLG1CQUFBO0FIb29CcEI7QUdub0JvQjtFQVRKO0lBVVEsZ0JBQUE7RUhzb0J0QjtBQUNGO0FHcG9Cd0I7RUFDSSxnQkFBQTtFQUNBLHlCQ2xIWDtFRG1IVyw0QkFBQTtFQUNBLDBDQUFBO1VBQUEsa0NBQUE7QUhzb0I1QjtBR3JvQjRCO0VBQ0ksb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx3QkFBQTtNQUFBLHFCQUFBO1VBQUEsdUJBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsbUJBQUE7RUFDQSxVQUFBO0VBQ0Esa0JBQUE7RUFDQSx1QkFBQTtFQUNBLGNDNUhmO0VENkhlLFlBQUE7RUFDQSxrQ0FBQTtVQUFBLDBCQUFBO0FIdW9CaEM7QUdub0JvQjtFQUNJLDRFQUFBO1VBQUEsb0VBQUE7QUhxb0J4QjtBR25vQm9CO0VBQ0ksd0VBQUE7VUFBQSxnRUFBQTtBSHFvQnhCO0FHbm9Cb0I7RUFDSSw0RUFBQTtVQUFBLG9FQUFBO0FIcW9CeEI7QUdub0JvQjtFQUNJLHdFQUFBO1VBQUEsZ0VBQUE7QUhxb0J4QjtBR25vQm9CO0VBQ0ksbUJBQUE7TUFBQSxXQUFBO1VBQUEsT0FBQTtFQUNBLHlCQUFBO0VBQ0EsMEJBQUE7S0FBQSx1QkFBQTtFQUNBLG1CQUFBO0VBQ0EsZ0JBQUE7QUhxb0J4QjtBR3BvQndCO0VBQ0ksa0JBQUE7RUFDQSxhQUFBO0VBQ0EsMEJBQUE7S0FBQSx1QkFBQTtFQUNBLG1CQUFBO0VBQ0EsZ0JBQUE7QUhzb0I1QjtBR3JvQjRCO0VBTko7SUFPUSxnQkFBQTtFSHdvQjlCO0FBQ0Y7QUd0b0J3QjtFQUNJLFNBQUE7RUFDQSwwQkFBQTtLQUFBLHVCQUFBO0VBQ0EsbUJBQUE7RUFDQSxnQkFBQTtBSHdvQjVCO0FHcm9Cb0I7RUFDSSxtQkFBQTtBSHVvQnhCO0FHdG9Cd0I7RUFDSSxpQkFBQTtBSHdvQjVCO0FHcm9Cb0I7RUFDSSxZQUFBO0VBQ0EsUUFBQTtFQUNBLG9CQUFBO0VBQUEsb0JBQUE7RUFBQSxhQUFBO0VBQ0Esd0JBQUE7TUFBQSxxQkFBQTtVQUFBLHVCQUFBO0VBQ0EseUJBQUE7TUFBQSxzQkFBQTtVQUFBLG1CQUFBO0FIdW9CeEI7QUd0b0J3QjtFQUNJLFVBQUE7QUh3b0I1QjtBR2pvQkk7RUFDSSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLHdCQUFBO01BQUEscUJBQUE7VUFBQSx1QkFBQTtFQUNBLHNCQUFBO0FIbW9CUjtBR2xvQlE7RUVqTEEsaUNBQUE7RUFDQSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSxZQUFBO0VBQ0EsY0FBQTtFQUNBLFlBQUE7RUFDQSx3RkFBQTtFQUFBLDhEQUFBO0VBQUEsMERBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7RUYyS0EsNEJBQUE7QUg0b0JSO0FHM29CWTtFQUNJLGFBQUE7RUFDQSw0Q0FBQTtVQUFBLG9DQUFBO0FINm9CaEI7O0FHajFCQTtFQUNJLGlCQUFBO0VBQ0EsY0FBQTtBSG8xQko7O0FHajFCSTtFQURKO0lBRVEsb0JBQUE7SUFBQSxvQkFBQTtJQUFBLGFBQUE7SUFDQSxtQkFBQTtRQUFBLGVBQUE7SUFDQSx3QkFBQTtRQUFBLHFCQUFBO1lBQUEsdUJBQUE7RUhxMUJOO0FBQ0Y7QUdwMUJJO0VBQ0ksV0FBQTtBSHMxQlI7QUdyMUJRO0VBQ0ksV0FBQTtFQUNBLG9CQUFBO0tBQUEsaUJBQUE7RUFDQSxhQUFBO0FIdTFCWjtBR3QxQlk7RUFKSjtJQUtRLG1CQUFBO0VIeTFCZDtBQUNGO0FHeDFCWTtFQVBKO0lBUVEsYUFBQTtFSDIxQmQ7QUFDRjtBR3gxQkk7RUFDRyxrQkFBQTtFQUNBLGlCQUFBO0VBQ0EsNEJBQUE7RUFDQSx5QkFBQTtFQUNBLHNCQUFBO0FIMDFCUDtBR3oxQk87RUFOSDtJQU9PLGdCQUFBO0VINDFCVDtBQUNGO0FHMzFCTztFQVRIO0lBVU8sVUFBQTtFSDgxQlQ7QUFDRjtBRzcxQk87RUFDSyxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLHlCQUFBO01BQUEsc0JBQUE7VUFBQSw4QkFBQTtFQUNBLHlCQUFBO01BQUEsc0JBQUE7VUFBQSxtQkFBQTtFQUNBLGtCQUFBO0FIKzFCWjtBRzkxQlc7RUFDSSxvQ0FBQTtFQUNBLGdCQUFBO0FIZzJCZjtBRy8xQmU7RUFISjtJQUlRLGNBQUE7RUhrMkJqQjtBQUNGO0FHaDJCVztFQUNLLGdCQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0VBQ0EsU0FBQTtFQUNBLFdBQUE7QUhrMkJoQjtBR2oyQmdCO0VBTkw7SUFPUyxjQUFBO0VIbzJCbEI7QUFDRjtBR24yQmdCO0VBVEw7SUFVUyxjQUFBO0VIczJCbEI7QUFDRjtBR3IyQmdCO0VBQ0ksd0ZBQUE7RUFBQSw4REFBQTtFQUFBLDBEQUFBO0VBQ0EsNkJBQUE7RUFDQSxvQ0FBQTtFQUNBLGlCQUFBO0VBQ0EsMENBQUE7VUFBQSxrQ0FBQTtBSHUyQnBCO0FHbDJCUTtFQUREO0lBRUssb0JBQUE7SUFBQSxvQkFBQTtJQUFBLGFBQUE7SUFDQSx5QkFBQTtRQUFBLHNCQUFBO1lBQUEsOEJBQUE7RUhxMkJWO0FBQ0Y7QUduMkJPO0VBQ0ssaUNBQUE7RUFDQSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLDRCQUFBO0VBQUEsNkJBQUE7TUFBQSwwQkFBQTtVQUFBLHNCQUFBO0VBQ0EseUJBQUE7TUFBQSxzQkFBQTtVQUFBLG1CQUFBO0FIcTJCWjtBR3AyQlk7RUFMTDtJQU1TLFVBQUE7RUh1MkJkO0FBQ0Y7QUd0MkJZO0VBQ0ksV0FBQTtBSHcyQmhCO0FHdjJCZ0I7RUFGSjtJQUdRLGdCQUFBO0VIMDJCbEI7QUFDRjtBR3oyQmdCO0VBQ0EsZ0JBQUE7RUFDQSxxQkFBQTtFQUNBLG1CQUFBO0VBQ0EsV0FBQTtFQUNBLGdDQUFBO0FIMjJCaEI7QUd4MkJXO0VBQ0ksV0FBQTtFQUNDLG9CQUFBO0VBQUEsb0JBQUE7RUFBQSxhQUFBO0VBQ0EsNEJBQUE7RUFBQSw2QkFBQTtNQUFBLDBCQUFBO1VBQUEsc0JBQUE7RUFDQSx5QkFBQTtNQUFBLDZCQUFBO0FIMDJCaEI7QUd6MkJnQjtFQUNJLGVBQUE7RUFDQSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLHlCQUFBO01BQUEsc0JBQUE7VUFBQSw4QkFBQTtFQUNBLHlCQUFBO01BQUEsc0JBQUE7VUFBQSxtQkFBQTtFQUNBLHVCQUFBO0VBQ0EsbUJBQUE7RUFDQSwyQ0FBQTtVQUFBLG1DQUFBO0VBQ0EsbUJBQUE7QUgyMkJwQjtBRzEyQm9CO0VBVEo7SUFVUSxnQkFBQTtFSDYyQnRCO0FBQ0Y7QUczMkJ3QjtFQUNJLGdCQUFBO0VBQ0EseUJDbEhYO0VEbUhXLDRCQUFBO0VBQ0EsMENBQUE7VUFBQSxrQ0FBQTtBSDYyQjVCO0FHNTJCNEI7RUFDSSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLHdCQUFBO01BQUEscUJBQUE7VUFBQSx1QkFBQTtFQUNBLHlCQUFBO01BQUEsc0JBQUE7VUFBQSxtQkFBQTtFQUNBLFVBQUE7RUFDQSxrQkFBQTtFQUNBLHVCQUFBO0VBQ0EsY0M1SGY7RUQ2SGUsWUFBQTtFQUNBLGtDQUFBO1VBQUEsMEJBQUE7QUg4MkJoQztBRzEyQm9CO0VBQ0ksNEVBQUE7VUFBQSxvRUFBQTtBSDQyQnhCO0FHMTJCb0I7RUFDSSx3RUFBQTtVQUFBLGdFQUFBO0FINDJCeEI7QUcxMkJvQjtFQUNJLDRFQUFBO1VBQUEsb0VBQUE7QUg0MkJ4QjtBRzEyQm9CO0VBQ0ksd0VBQUE7VUFBQSxnRUFBQTtBSDQyQnhCO0FHMTJCb0I7RUFDSSxtQkFBQTtNQUFBLFdBQUE7VUFBQSxPQUFBO0VBQ0EseUJBQUE7RUFDQSwwQkFBQTtLQUFBLHVCQUFBO0VBQ0EsbUJBQUE7RUFDQSxnQkFBQTtBSDQyQnhCO0FHMzJCd0I7RUFDSSxrQkFBQTtFQUNBLGFBQUE7RUFDQSwwQkFBQTtLQUFBLHVCQUFBO0VBQ0EsbUJBQUE7RUFDQSxnQkFBQTtBSDYyQjVCO0FHNTJCNEI7RUFOSjtJQU9RLGdCQUFBO0VIKzJCOUI7QUFDRjtBRzcyQndCO0VBQ0ksU0FBQTtFQUNBLDBCQUFBO0tBQUEsdUJBQUE7RUFDQSxtQkFBQTtFQUNBLGdCQUFBO0FIKzJCNUI7QUc1MkJvQjtFQUNJLG1CQUFBO0FIODJCeEI7QUc3MkJ3QjtFQUNJLGlCQUFBO0FIKzJCNUI7QUc1MkJvQjtFQUNJLFlBQUE7RUFDQSxRQUFBO0VBQ0Esb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx3QkFBQTtNQUFBLHFCQUFBO1VBQUEsdUJBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsbUJBQUE7QUg4MkJ4QjtBRzcyQndCO0VBQ0ksVUFBQTtBSCsyQjVCO0FHeDJCSTtFQUNJLG9CQUFBO0VBQUEsb0JBQUE7RUFBQSxhQUFBO0VBQ0Esd0JBQUE7TUFBQSxxQkFBQTtVQUFBLHVCQUFBO0VBQ0Esc0JBQUE7QUgwMkJSO0FHejJCUTtFRWpMQSxpQ0FBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLFlBQUE7RUFDQSxjQUFBO0VBQ0EsWUFBQTtFQUNBLHdGQUFBO0VBQUEsOERBQUE7RUFBQSwwREFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFRjJLQSw0QkFBQTtBSG0zQlI7QUdsM0JZO0VBQ0ksYUFBQTtFQUNBLDRDQUFBO1VBQUEsb0NBQUE7QUhvM0JoQjs7QUY3aUNBO0VBQ0ksaUJBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7QUVnakNKO0FGL2lDSTtFQUNJLFdBQUE7RUFDQSxZQUFBO0VBQ0EsZUFBQTtFQUNBLHlDQUFBO1VBQUEsaUNBQUE7RUFDQSxXQUFBO0FFaWpDUjtBRmhqQ1E7RUFDSSxZQUFBO0VBQ0EsYUFBQTtFQUNBLDhCQUFBO0VBQ0EsaUNBQUE7RUFDQSwrQkFBQTtFQUNBLGdDQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxNQUFBO0VBQ0EsU0FBQTtFQUNBLFFBQUE7RUFDQSxPQUFBO0VBQ0EsK0JBQUE7VUFBQSx1QkFBQTtBRWtqQ1o7O0FGOWlDQTtFT3RDSSx5QkFBQTtFQUNBLGtCQUFBO0VBQ0EsaUNBQUE7QUx3bENKO0FGbGpDSTtFT25DSSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLHdCQUFBO01BQUEscUJBQUE7VUFBQSx1QkFBQTtFQUNBLHlCQUFBO01BQUEsc0JBQUE7VUFBQSxtQkFBQTtFQUNBLHlCQUFBO0VBQ0Esd0dBQUE7RUFBQSw2REFBQTtFQUFBLDBEQUFBO0VBQ0EsNkJBQUE7VUFBQSxxQkFBQTtBTHdsQ1I7QUZ4akNRO0VBQ0ksbUJBQUE7QUUwakNaO0FGeGpDUTtFQUNJLG1CQUFBO0VBQ0EsZ0JBQUE7QUUwakNaO0FGdmpDSTtFQUNJLHNCQUFBO0FFeWpDUjtBRnhqQ1E7RUFDSSxnQkFBQTtFQUNBLGdCQUFBO0VBQ0Esc0JBQUE7QUUwakNaO0FGeGpDUTtFQUNJLHNCQUFBO0FFMGpDWjtBRnhqQ1E7RU8vQ0EsaUNBQUE7RUFDQSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSxZQUFBO0VBQ0EsY0FBQTtFQUNBLFlBQUE7RUFDQSx3RkFBQTtFQUFBLDhEQUFBO0VBQUEsMERBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7QUwwbUNSO0FGamtDWTtFQUNJLGFBQUE7RUFDQSw0Q0FBQTtVQUFBLG9DQUFBO0FFbWtDaEI7O0FGOWpDQTtFQUNJLDRCQUFBO0VBS0EsaUNBQUE7QUU2akNKO0FGamtDSTtFQUNJLGdCQUFBO0VBQ0Esb0JBQUE7QUVta0NSO0FGaGtDSTtFQUNJLG9CQUFBO0VBQUEsb0JBQUE7RUFBQSxhQUFBO0VBQ0EsbUJBQUE7TUFBQSxlQUFBO0VBQ0Esd0JBQUE7TUFBQSxxQkFBQTtVQUFBLHVCQUFBO0FFa2tDUjtBRmprQ1E7RUFKSjtJQUtRLGdCQUFBO0lBQ0EseUJBQUE7UUFBQSxzQkFBQTtZQUFBLDhCQUFBO0VFb2tDVjtBQUNGO0FGbGtDSTtFTzdESSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLHlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxtQkFBQTtFQUNBLGFBQUE7RUFDQSwyQ0FBQTtVQUFBLG1DQUFBO0FMa29DUjtBS2pvQ1E7RVBxREo7SU9wRFksVUFBQTtFTG9vQ2Q7QUFDRjtBRi9rQ1E7RUFGSjtJQUdRLFVBQUE7RUVrbENWO0FBQ0Y7QUZqbENRO0VBQ0kseUJBQUE7QUVtbENaO0FGbGxDUTtFQUNRLGNNOUZBO0FKa3JDaEI7QUZqbENRO0VPM0RBLFdBQUE7RUFDQSxZQUFBO0VBQ0Esb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx3QkFBQTtNQUFBLHFCQUFBO1VBQUEsdUJBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsbUJBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQ0EseUJEOUNRO0VDK0NSLGtCQUFBO0VBQ0EsV0FBQTtFQUNBLFNBQUE7QUwrb0NSO0FGNWxDUTtFQUNJLFdBQUE7RUFDQSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLHlCQUFBO01BQUEsNkJBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsbUJBQUE7QUU4bENaO0FGN2xDWTtFQUxKO0lBTVEseUJBQUE7UUFBQSw2QkFBQTtFRWdtQ2Q7QUFDRjtBRi9sQ1k7RUFDSSxjQUFBO0VBQ0EsZ0JBQUE7QUVpbUNoQjtBRi9sQ1k7RUFDSSxpQkFBQTtFQUNBLGdCQUFBO0FFaW1DaEI7O0FGNWxDQTtFQUNJLGlDQUFBO0VBQ0EseUJBQUE7RUFDQSxvQkFBQTtBRStsQ0o7QUY5bENJO0VBSko7SUFLUSxvQkFBQTtJQUFBLG9CQUFBO0lBQUEsYUFBQTtJQUNBLDRCQUFBO0lBQUEsNkJBQUE7UUFBQSwwQkFBQTtZQUFBLHNCQUFBO0VFaW1DTjtBQUNGO0FGaG1DSTtFQUNJLHNCQUFBO0FFa21DUjtBRmptQ1E7RUFGSjtJQUdRLGtCQUFBO0VFb21DVjtBQUNGO0FGam1DUTtFQURKO0lBRVEsb0JBQUE7SUFBQSxvQkFBQTtJQUFBLGFBQUE7SUFDQSx5QkFBQTtRQUFBLHNCQUFBO1lBQUEsOEJBQUE7SUFDQSxtQkFBQTtRQUFBLGVBQUE7RUVvbUNWO0FBQ0Y7QUZubUNRO0VBTko7SUFPUSxvQkFBQTtJQUFBLG9CQUFBO0lBQUEsYUFBQTtJQUNBLHlCQUFBO1FBQUEsNkJBQUE7RUVzbUNWO0FBQ0Y7QUZwbUNJO0VBQ0ksb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx3QkFBQTtNQUFBLHFCQUFBO1VBQUEsdUJBQUE7RUFDQSxvQkFBQTtBRXNtQ1I7QUZybUNRO0VBSko7SUFLUSxVQUFBO0VFd21DVjtBQUNGO0FGdm1DUTtFQVBKO0lBUVEsVUFBQTtFRTBtQ1Y7QUFDRjtBRnptQ1E7RUFDSSxVQUFBO0VBQ0EsU0FBQTtFQUNBLG9CQUFBO0VBQUEsb0JBQUE7RUFBQSxhQUFBO0VBQ0EsNEJBQUE7RUFBQSw2QkFBQTtNQUFBLDBCQUFBO1VBQUEsc0JBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsbUJBQUE7RUFDQSxrQ0FBQTtFQUNBLHVCQUFBO0VBQ0EsMkNBQUE7VUFBQSxtQ0FBQTtBRTJtQ1o7QUYxbUNZO0VBQ0kseUJNbEtDO0VObUtELGNBQUE7RUFDQSxpQkFBQTtFQUNBLDBCQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtFQUNBLFNBQUE7RUFDQSxXQUFBO0FFNG1DaEI7QUYxbUNZO0VBQ0ksVUFBQTtFQUNBLG9CQUFBO0VBQUEsb0JBQUE7RUFBQSxhQUFBO0VBQ0EseUJBQUE7TUFBQSxzQkFBQTtVQUFBLDhCQUFBO0FFNG1DaEI7QUYzbUNnQjtFQUpKO0lBS1EsV0FBQTtJQUNBLGdCQUFBO0VFOG1DbEI7QUFDRjtBRjVtQ29CO0VBREo7SUFFUSxrQkFBQTtFRSttQ3RCO0FBQ0Y7QUY5bUNvQjtFQUNJLGtCQUFBO0FFZ25DeEI7QUY5bUNvQjtFQUNJLGVBQUE7QUVnbkN4QjtBRjdtQ2dCO0VBSUksb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsbUJBQUE7QUU0bUNwQjtBRmhuQ29CO0VBREo7SUFFUSxtQkFBQTtFRW1uQ3RCO0FBQ0Y7QUZobkNvQjtFQUNJLGdCQUFBO0VBQ0EsZUFBQTtFQUNBLGNBQUE7QUVrbkN4QjtBRmpuQ3dCO0VBQ0ksd0ZBQUE7RUFBQSw4REFBQTtFQUFBLDBEQUFBO0VBQ0EsNkJBQUE7VUFBQSxxQkFBQTtFQUNBLG9DQUFBO0VBQ0EsaUJBQUE7RUFDQSwwQ0FBQTtVQUFBLGtDQUFBO0FFbW5DNUI7QUY3bUNRO0VBQ0ksa0JBQUE7RUFDQSxXQUFBO0FFK21DWjtBRjVtQ0k7RUFDSSxXQUFBO0VBQ0EsWUFBQTtFQUNBLG9CQUFBO0tBQUEsaUJBQUE7RUFDQSw0QkFBQTtBRThtQ1I7QUY3bUNRO0VBTEo7SUFNUSxZQUFBO0VFZ25DVjtBQUNGO0FGL21DUTtFQVJKO0lBU1EsWUFBQTtFRWtuQ1Y7QUFDRiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
